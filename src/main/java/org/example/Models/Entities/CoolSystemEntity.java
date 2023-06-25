@@ -106,7 +106,24 @@ public class CoolSystemEntity {
     }
 
     public void setDateOfCreated(Date dateOfCreated) {
+
         this.dateOfCreated = dateOfCreated;
     }
 
+    @Override
+    public String toString() {
+        return "CoolSystemEntity{" +
+                "brand='" + brand + '\'' +
+                ", id=" + id +
+                ", dateOfCreated=" + dateOfCreated +
+                ", made='" + made + '\'' +
+                ", numbers=" + numbers +
+                ", power='" + power + '\'' +
+                ", isNew=" + isNew +
+                ", photo='" + photo + '\'' +
+                ", warranty=" + warranty +
+                ", EnergyLabel='" + EnergyLabel + '\'' +
+                ", weight='" + weight + '\'' +
+                '}';
+    }
 }

@@ -137,4 +137,23 @@ public class WaterCoolerEntity extends CoolSystemEntity{
     public void setInternalPanelMaterial(String internalPanelMaterial) {
         this.internalPanelMaterial = internalPanelMaterial;
     }
+
+    @Override
+    public String toString() {
+        return "WaterCoolerEntity{" +
+                "bodyMaterial='" + bodyMaterial + '\'' +
+                ", dimention='" + dimention + '\'' +
+                ", maximumWindPower='" + maximumWindPower + '\'' +
+                ", PumpPower='" + PumpPower + '\'' +
+                ", comsumptionWaterPeerHours='" + comsumptionWaterPeerHours + '\'' +
+                ", remoteController='" + remoteController + '\'' +
+                ", airConditionerFacilities='" + airConditionerFacilities + '\'' +
+                ", inverter='" + inverter + '\'' +
+                ", eERCoolingEfficiency='" + eERCoolingEfficiency + '\'' +
+                ", cOPHeatingEfficiency='" + cOPHeatingEfficiency + '\'' +
+                ", numberOfPanels=" + numberOfPanels +
+                ", type='" + type + '\'' +
+                ", internalPanelMaterial='" + internalPanelMaterial + '\'' +
+                '}';
+    }
 }

@@ -2,10 +2,12 @@ package org.example.Models.Behavior.BehaviorInterfaces;
 
 import org.example.Models.Entities.CoolSystemEntity;
 
+import java.io.IOException;
+
 public interface CoolSystemBehavior {
-    boolean buy(CoolSystemEntity coolSystem);
-    boolean create(CoolSystemEntity coolSystem);
-    boolean edit(CoolSystemEntity coolSystem);
-    boolean remove(CoolSystemEntity coolSystem);
+    boolean buy(CoolSystemEntity coolSystem) throws IOException;
+    boolean create(CoolSystemEntity coolSystem) throws IOException;
+    boolean edit(CoolSystemEntity coolSystem) throws IOException;
+    boolean remove(CoolSystemEntity coolSystem) throws IOException;
 
 }

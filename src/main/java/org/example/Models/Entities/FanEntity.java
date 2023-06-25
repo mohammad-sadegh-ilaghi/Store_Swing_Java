@@ -67,4 +67,16 @@ public class FanEntity extends CoolSystemEntity {
     public void setLengthOfCable(String lengthOfCable) {
         this.lengthOfCable = lengthOfCable;
     }
+
+    @Override
+    public String toString() {
+        return "FanEntity{" +
+                "length=" + length +
+                ", type='" + type + '\'' +
+                ", haveremoteController=" + haveremoteController +
+                ", dimension='" + dimension + '\'' +
+                ", windVolume='" + windVolume + '\'' +
+                ", lengthOfCable='" + lengthOfCable + '\'' +
+                '}';
+    }
 }

@@ -86,4 +86,16 @@ public class UserEntity {
     public void setCreated(Date created) {
         this.created = created;
     }
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "userName='" + userName + '\'' +
+                ", numberPhone='" + numberPhone + '\'' +
+                ", password='" + password + '\'' +
+                ", hashPassword='" + hashPassword + '\'' +
+                ", email='" + email + '\'' +
+                ", created=" + created +
+                '}';
+    }
 }

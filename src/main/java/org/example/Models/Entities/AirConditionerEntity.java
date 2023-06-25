@@ -58,4 +58,16 @@ public class AirConditionerEntity extends CoolSystemEntity {
     public void setThreeRowCoil(String threeRowCoil) {
         ThreeRowCoil = threeRowCoil;
     }
+
+    @Override
+    public String toString() {
+        return "AirConditionerEntity{" +
+                "theOutputIsTwoWay='" + theOutputIsTwoWay + '\'' +
+                ", coolingCapacityBTUh='" + coolingCapacityBTUh + '\'' +
+                ", coolingCapacityKw='" + coolingCapacityKw + '\'' +
+                ", heatingCapacityBTUh='" + heatingCapacityBTUh + '\'' +
+                ", ThreeRowCoil='" + ThreeRowCoil + '\'' +
+                super.toString() +
+                '}';
+    }
 }
