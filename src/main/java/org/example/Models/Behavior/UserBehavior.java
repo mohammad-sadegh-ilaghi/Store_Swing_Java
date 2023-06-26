@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.example.Models.Entities.UserEntity;
 
 import java.io.*;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -24,6 +25,20 @@ public class UserBehavior {
             return true;
         }
         return false;
+    }
+
+    public boolean edit(UserEntity user) throws NoSuchAlgorithmException {
+        UserEntity userMain = users.stream()
+                .filter(item -> item.getEmail() == item.getEmail())
+                .toList()
+                .get(0);
+        userMain =user;
+        userMain.setPassword(user.getPassword());
+        boolean result = write("edit user", user);
+        if (!result)
+            return false;
+
+        return true;
     }
     public boolean login(UserEntity user){
         if (users.stream().filter(item ->item.getHashPassword() == user.getHashPassword() &&

@@ -12,15 +12,21 @@ public class UserEntity {
     private String hashPassword;
     private String email;
     private Date created;
+    private CardEntity cardBank;
 
-    public UserEntity(String userName, String numberPhone, String password, String email) throws NoSuchAlgorithmException {
+
+    public UserEntity(String userName, String numberPhone, String password, String email, CardEntity cardBank) throws NoSuchAlgorithmException {
+        this.cardBank = cardBank;
         this.userName = userName;
         this.numberPhone = numberPhone;
         this.password = password;
-        MessageDigest md = MessageDigest.getInstance("SHA-512");
         this.hashPassword = hashPassword(password);
         this.email = email;
+        this.created = new Date();
     }
+
+
+
     public UserEntity(String userName, String password) {
         this.userName = userName;
         this.password = password;
@@ -38,6 +44,13 @@ public class UserEntity {
 
         String hashedPassword = hexString.toString();
         return hashedPassword;
+    }
+    public CardEntity getCardBank() {
+        return cardBank;
+    }
+
+    public void setCardBank(CardEntity cardBank) {
+        this.cardBank = cardBank;
     }
     public String getUserName() {
         return userName;
@@ -59,16 +72,18 @@ public class UserEntity {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(String password) throws NoSuchAlgorithmException {
         this.password = password;
+        setHashPassword(hashPassword(password));
     }
 
     public String getHashPassword() {
         return hashPassword;
     }
 
-    private void setHashPassword(String hashPassword) {
+    private String setHashPassword(String hashPassword) {
         this.hashPassword = hashPassword;
+        return hashPassword;
     }
 
     public String getEmail() {
@@ -83,9 +98,6 @@ public class UserEntity {
         return created;
     }
 
-    public void setCreated(Date created) {
-        this.created = created;
-    }
 
     @Override
     public String toString() {
