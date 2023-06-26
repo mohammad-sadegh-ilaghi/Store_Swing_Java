@@ -10,10 +10,16 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class UserBehavior {
+    private static UserBehavior instance;
     private static final Logger logger = LogManager.getLogger(AirConditionerBehavior.class);
 
     private ArrayList<UserEntity> users;
-    public UserBehavior() throws IOException {
+    public static UserBehavior singelton() throws IOException {
+        if (instance == null)
+            instance = new UserBehavior();
+        return instance;
+    }
+    private UserBehavior() throws IOException {
         users = readFile();
         if (users==null)
             users = new ArrayList<>();

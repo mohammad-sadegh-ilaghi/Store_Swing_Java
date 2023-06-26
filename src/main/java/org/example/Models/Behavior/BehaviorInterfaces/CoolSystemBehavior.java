@@ -9,5 +9,4 @@ public interface CoolSystemBehavior {
     boolean create(CoolSystemEntity coolSystem) throws IOException;
     boolean edit(CoolSystemEntity coolSystem) throws IOException;
     boolean remove(CoolSystemEntity coolSystem) throws IOException;
-
 }

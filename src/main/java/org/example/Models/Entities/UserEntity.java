@@ -11,7 +11,7 @@ public class UserEntity {
     private String password;
     private String hashPassword;
     private String email;
-    private Date created;
+    private Date lastModified;
     private CardEntity cardBank;
 
 
@@ -22,7 +22,7 @@ public class UserEntity {
         this.password = password;
         this.hashPassword = hashPassword(password);
         this.email = email;
-        this.created = new Date();
+        this.lastModified = new Date();
     }
 
 
@@ -95,7 +95,7 @@ public class UserEntity {
     }
 
     public Date getCreated() {
-        return created;
+        return lastModified;
     }
 
 
@@ -107,7 +107,7 @@ public class UserEntity {
                 ", password='" + password + '\'' +
                 ", hashPassword='" + hashPassword + '\'' +
                 ", email='" + email + '\'' +
-                ", created=" + created +
+                ", created=" + lastModified +
                 '}';
     }
 }

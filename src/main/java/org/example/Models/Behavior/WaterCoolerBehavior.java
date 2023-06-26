@@ -11,10 +11,16 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class WaterCoolerBehavior implements CoolSystemBehavior {
+    private static WaterCoolerBehavior instance;
     private ArrayList<WaterCoolerEntity> watercooleres;
     private static final Logger logger = LogManager.getLogger(AirConditionerBehavior.class);
 
-    public WaterCoolerBehavior() throws IOException {
+    public  static WaterCoolerBehavior singelton() throws IOException {
+        if (instance == null)
+            instance = new WaterCoolerBehavior();
+        return instance;
+    }
+    private WaterCoolerBehavior() throws IOException {
         watercooleres = read();
         if (watercooleres == null){
             watercooleres = new ArrayList<>();

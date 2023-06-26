@@ -25,6 +25,14 @@ public class CardEntity {
     }
 
     public void setInventory(int inventory) {
-        this.inventory = inventory;
+        this.inventory += inventory;
+    }
+
+    public void setIdCard(int idCard) {
+        IdCard = idCard;
+    }
+
+    public void setBank(String bank) {
+        this.bank = bank;
     }
 }

@@ -3,7 +3,7 @@ package org.example.Models.Entities;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class CoolSystemEntity {
+public abstract class CoolSystemEntity {
     private String brand;
     private int id;
 

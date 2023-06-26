@@ -13,11 +13,15 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class FanEntitiyBehavior implements CoolSystemBehavior {
+    private static FanEntitiyBehavior instance;
     private ArrayList<FanEntity> fans;
     private static final Logger logger = LogManager.getLogger(AirConditionerBehavior.class);
-
-
-    public FanEntitiyBehavior() throws IOException {
+    public static FanEntitiyBehavior singelton() throws IOException {
+            if (instance ==null)
+                instance = new FanEntitiyBehavior();
+            return instance;
+    }
+    private FanEntitiyBehavior() throws IOException {
         fans = read();
         if (fans == null){
             logger.fatal("file can not read and create");

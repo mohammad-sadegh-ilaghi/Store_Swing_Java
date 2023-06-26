@@ -10,10 +10,17 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class AirConditionerBehavior implements CoolSystemBehavior {
+    private static AirConditionerBehavior instance;
     private ArrayList<AirConditionerEntity> airConditioneres;
     private static final Logger logger = LogManager.getLogger(AirConditionerBehavior.class);
 
-    public AirConditionerBehavior() throws IOException {
+    public static AirConditionerBehavior singelton() throws IOException {
+        if (instance ==null)
+            instance = new AirConditionerBehavior();
+        return instance;
+    }
+
+    private AirConditionerBehavior() throws IOException {
         airConditioneres = readAirConditionFromFile();
         if (airConditioneres == null)
             airConditioneres = new ArrayList<>();
