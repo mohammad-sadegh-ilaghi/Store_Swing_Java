@@ -30,7 +30,6 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
     }
     @Override
     public boolean buy(CoolSystemEntity coolSystem) {
-
         return false;
     }
 
@@ -65,7 +64,7 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
         }
         return null;
     }
-    private boolean write() throws IOException {
+    private boolean write(String log, WaterCoolerEntity waterCoolerEntity) throws IOException {
         try(FileOutputStream waterCoolFile = new FileOutputStream(filePath)){
             ObjectOutputStream out = new ObjectOutputStream(waterCoolFile);
             out.writeObject(watercooleres);
@@ -74,7 +73,7 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
         } catch (FileNotFoundException e) {
             File file = new File(filePath);
             file.createNewFile();
-
+            write(log, waterCoolerEntity);
             logger.info("file waterCooler created");
             return true;
         } catch (Exception e) {
@@ -92,7 +91,6 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
         } catch (FileNotFoundException e) {
             File file = new File(filePath);
             file.createNewFile();
-            write();
             logger.info("file waterCooler created");
             return true;
         } catch (Exception e) {

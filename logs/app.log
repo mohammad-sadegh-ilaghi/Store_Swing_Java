@@ -104,3 +104,116 @@
 2023-06-27 14:05:05.530 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
 2023-06-27 14:06:16.674 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
 2023-06-27 14:06:27.985 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 14:53:44.147 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 14:53:55.171 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 14:54:33.392 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 14:54:43.883 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 14:57:45.497 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 14:58:00.431 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 14:58:30.725 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 14:58:40.231 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 15:02:39.025 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:02:45.475 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hostry to login
+2023-06-27 15:02:50.046 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 15:02:57.005 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 15:04:41.663 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:04:50.409 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 15:07:38.442 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:07:47.917 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 15:08:37.584 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:08:47.576 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 15:09:59.258 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:10:07.312 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 15:46:52.115 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:47:01.899 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 15:48:18.342 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:48:42.944 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user created account: UserEntity{userName='m', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='df', created=Tue Jun 27 15:48:42 IRST 2023}
+2023-06-27 15:49:02.562 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:49:07.956 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 15:49:36.534 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user created account: UserEntity{userName='m', numberPhone='09', password='09', hashPassword='3514acf61732f662da19625f7fe781c3e483f2dce8506012f3bb393f5003e105', email='m', created=Tue Jun 27 15:49:36 IRST 2023}
+2023-06-27 15:49:51.472 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:50:06.310 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:50:09.689 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 15:50:16.965 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 15:52:08.802 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user created account: UserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m', created=Tue Jun 27 15:52:08 IRST 2023}
+2023-06-27 15:52:49.744 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:52:53.007 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 15:54:50.470 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 15:54:54.740 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:06:21.016 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:06:23.936 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:06:46.085 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.ho', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@gm.co', created=Tue Jun 27 16:06:46 IRST 2023}
+2023-06-27 16:06:58.011 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:07:01.284 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:08:35.617 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:08:39.101 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:08:50.219 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user editUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@ms.co', created=Tue Jun 27 16:08:50 IRST 2023}
+2023-06-27 16:08:50.223 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@ms.co', created=Tue Jun 27 16:08:50 IRST 2023}
+2023-06-27 16:09:01.819 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:09:04.381 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:10:26.153 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:10:29.550 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:10:41.941 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user editUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@m.co', created=Tue Jun 27 16:10:41 IRST 2023}
+2023-06-27 16:10:41.970 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@m.co', created=Tue Jun 27 16:10:41 IRST 2023}
+2023-06-27 16:11:36.130 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:11:49.770 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:12:11.914 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user editUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@CG.JG', created=Tue Jun 27 16:12:11 IRST 2023}
+2023-06-27 16:12:11.941 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@CG.JG', created=Tue Jun 27 16:12:11 IRST 2023}
+2023-06-27 16:14:47.154 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:14:50.523 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:17:02.285 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:17:04.857 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:17:15.437 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@ma.co', created=Tue Jun 27 16:17:15 IRST 2023}
+2023-06-27 16:18:25.967 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:18:30.097 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:20:09.527 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:20:36.096 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:20:41.207 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:20:55.611 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - ;sdUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@md.vo', created=Tue Jun 27 16:20:55 IRST 2023}
+2023-06-27 16:21:11.228 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - ;sdUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@md.vo', created=Tue Jun 27 16:21:11 IRST 2023}
+2023-06-27 16:21:24.479 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:21:29.170 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:21:46.192 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - ;sdUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@ma.co', created=Tue Jun 27 16:21:46 IRST 2023}
+2023-06-27 16:22:22.600 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:22:26.637 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:22:36.158 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - ;sdUserEntity{userName='m', numberPhone='m', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m@ci.co', created=Tue Jun 27 16:22:36 IRST 2023}
+2023-06-27 16:22:48.598 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:22:53.018 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-27 16:23:36.009 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:23:45.018 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 16:24:01.238 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:24:01 IRST 2023}
+2023-06-27 16:24:27.113 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:24:27 IRST 2023}
+2023-06-27 16:24:37.744 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:24:51.995 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 16:25:11.106 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:25:11 IRST 2023}
+2023-06-27 16:27:22.505 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:27:34.672 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 16:27:44.745 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:27:44 IRST 2023}
+2023-06-27 16:28:14.611 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:28:14 IRST 2023}
+2023-06-27 16:32:28.867 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:32:39.698 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 16:32:47.735 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:32:47 IRST 2023}
+2023-06-27 16:33:53.820 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:34:10.756 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 16:34:24.871 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:34:24 IRST 2023}
+2023-06-27 16:36:43.575 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:36:52.581 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 16:37:01.355 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:37:01 IRST 2023}
+2023-06-27 16:39:41.417 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:39:49.061 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:39:57.395 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 16:43:03.697 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:42:56 IRST 2023}
+2023-06-27 16:51:53.379 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:51:50 IRST 2023}
+2023-06-27 16:52:27.860 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785274', password='09162785274', hashPassword='9cd94824cd18b2c0f954931de22707cffe581421fb15738f7026111657fc0f1f', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:52:27 IRST 2023}
+2023-06-27 16:52:57.595 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785274', password='09162785274', hashPassword='9cd94824cd18b2c0f954931de22707cffe581421fb15738f7026111657fc0f1f', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:52:56 IRST 2023}
+2023-06-27 16:53:21.007 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:53:20 IRST 2023}
+2023-06-27 16:54:37.368 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:54:46.838 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 16:54:56.756 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m.hoseini9266@gmail.com', created=Tue Jun 27 16:54:56 IRST 2023}
+2023-06-27 16:55:08.182 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:55:14.553 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 16:59:47.687 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 16:59:52.966 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 17:00:05.350 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='m.hoseini', numberPhone='09162785273', password='m', hashPassword='62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a', email='m.hoseini9266@gmail.com', created=Tue Jun 27 17:00:05 IRST 2023}
+2023-06-27 17:03:28.750 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 17:03:36.033 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login

@@ -30,12 +30,16 @@ public class UserBehavior implements Serializable{
         }
 
     }
-    public boolean create(UserEntity user){
+    public boolean create(UserEntity user)  {
         users.add(user);
-        if (write("user created account: ", user) && checkDouplicateUser(user)){
-            UserConfigure userConfigure = UserConfigure.singlton();
-            userConfigure.login(user);
-            return true;
+        try {
+            if (write("user created account: ", user) && !checkDouplicateUser(user)){
+                UserConfigure userConfigure = UserConfigure.singlton();
+                userConfigure.login(user);
+                return true;
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
         users.removeIf(item -> item.getUserName() == user.getUserName() && item.getEmail() == user.getEmail());
         return false;
@@ -47,16 +51,22 @@ public class UserBehavior implements Serializable{
                                 || item.getNumberPhone().trim().equals(user.getNumberPhone())).count() > 0;
     }
     public boolean edit(UserEntity user) throws NoSuchAlgorithmException {
-        UserEntity userMain = users.stream()
+        UserEntity userMain  = users.stream()
                 .filter(item -> item.getEmail() == item.getEmail())
                 .toList()
                 .get(0);
-        userMain =user;
-        userMain.setPassword(user.getPassword());
-        boolean result = write("edit user", user);
+        user.getCardBank().setInventory(userMain.getCardBank().getInventory());
+        userMain = user;
+        System.out.println("user is " + user );
+        users.forEach(System.out::println);
+        boolean result = false;
+        try {
+            result = write("edit user", user);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         if (!result)
             return false;
-
         return true;
     }
     public boolean login(UserEntity user){
@@ -64,7 +74,8 @@ public class UserBehavior implements Serializable{
         if (users.stream().filter(item ->item.getHashPassword().equals(user.getHashPassword()) &&
                 (item.getUserName().equals(user.getUserName()))).count() >0){
             UserConfigure userConfigure = UserConfigure.singlton();
-            userConfigure.login(user);
+            userConfigure.login(users.stream().filter(item ->item.getHashPassword().equals(user.getHashPassword()) &&
+                    (item.getUserName().equals(user.getUserName()))).toList().get(0));
             return true;
         }
         return false;
@@ -97,7 +108,7 @@ public class UserBehavior implements Serializable{
         } catch (FileNotFoundException e) {
             File file = new File(filePath);
             file.createNewFile();
-
+            write(log, user);
             logger.fatal("can not find file of user");
         } catch (Exception e) {
             logger.fatal(e.getMessage());

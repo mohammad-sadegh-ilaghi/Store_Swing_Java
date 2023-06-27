@@ -113,6 +113,7 @@ public class FanEntitiyBehavior implements CoolSystemBehavior {
         } catch (FileNotFoundException e) {
             File file = new File(filePath);
             file.createNewFile();
+            write(log, fan);
             logger.info("fans created");
         } catch (Exception e) {
             logger.fatal(e.toString());

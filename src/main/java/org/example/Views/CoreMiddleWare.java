@@ -5,7 +5,7 @@ import org.example.Controllers.AirConditionerControlleres.CreateEditAirCondition
 import org.example.Controllers.AirConditionerControlleres.ListAirConditioerController;
 import org.example.Controllers.FanControlleres.CreateEditFanController;
 import org.example.Controllers.FanControlleres.ListFanController;
-import org.example.Controllers.UserControlleres.CardUserController;
+import org.example.Controllers.UserControlleres.EditUserController;
 import org.example.Controllers.UserControlleres.LoginController;
 import org.example.Controllers.UserControlleres.RegisterController;
 import org.example.Controllers.WaterCoolerControlleres.CreateEditWaterCoolerController;
@@ -42,7 +42,8 @@ public class CoreMiddleWare {
     // user itemes
     MenuItem userLoginItem = new MenuItem("Login");
     MenuItem userRegisterItem = new MenuItem("Register");
-    MenuItem userCardBankItem = new MenuItem("Bank card");
+    MenuItem userEditItem = new MenuItem("User Edit");
+
     // watercool itemes
     MenuItem waterCoolCreateItem = new MenuItem("Create");
     MenuItem waterCoolListItem = new MenuItem("waterCooles");
@@ -93,24 +94,23 @@ public class CoreMiddleWare {
             airConditionerMenu.add(airConditionerListItem);
 
             //add user item
-            userMenu.add(userCardBankItem);
-
+            userMenu.add(userEditItem);
             // add waterCool item
             waterCoolMenu.add(waterCoolCreateItem);
             waterCoolMenu.add(waterCoolListItem);
             //</editor-fold>
 
             //<editor-fold defaultstate="collapsed" desc="User ActionListerner">
-            userCardBankItem.addActionListener(new ActionListener() {
+            userEditItem.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    CardUserController cardUser = null;
+                    EditUserController editUserController = null;
                     try {
-                        cardUser = new CardUserController();
+                       editUserController = new EditUserController();
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
-                    setPanel(cardUser.getPanel());
+                    setPanel(editUserController.getPanel());
                 }
             });
 

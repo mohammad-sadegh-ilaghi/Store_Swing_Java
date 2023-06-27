@@ -1,11 +1,12 @@
 package org.example.Views.UserViews;
 
+import org.example.Models.Entities.UserEntity;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
-import java.util.regex.Pattern;
 
-public class RegisterView {
+public class RegisterEditView {
     private JPanel panel;
     JTextField username = new JTextField(10);
     JLabel usernameLabel = new JLabel("Username");
@@ -39,8 +40,8 @@ public class RegisterView {
 
     JLabel cardBankTitle = new JLabel("Card  bank");
 
-    JButton registerButton = new JButton("Register");
-    public RegisterView(){
+    JButton registerButton = new JButton("submit");
+    public RegisterEditView(){
         panel = new JPanel(new BorderLayout());
         panel.setSize(new Dimension(500, 700));
         panel.setMaximumSize(new Dimension(200, 200));
@@ -95,7 +96,21 @@ public class RegisterView {
         panel.add(formPanel, BorderLayout.CENTER);
         panel.add(registerButton, BorderLayout.SOUTH);
     }
+    public RegisterEditView(UserEntity user){
+        this();
+
+        username.setText(user.getUserName());
+        email.setText(user.getEmail());
+        phoneNumber.setText(user.getNumberPhone());
+        password.setText(user.getPassword());
+        idCard.setText(Integer.toString(user.getCardBank().getIdCard()));
+        bankName.setText(user.getCardBank().getBank());
+        inventoryLabel.setText(Integer.toString(user.getCardBank().getInventory()) + "$ is and to Increase: ");
+        inventory.setText("0");
+
+    }
     public JPanel getPanel(){
+        System.out.println(panel);
         return panel;
     }
 

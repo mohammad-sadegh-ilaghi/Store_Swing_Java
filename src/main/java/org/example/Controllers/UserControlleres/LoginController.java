@@ -5,12 +5,10 @@ import org.example.Models.Behavior.UserBehavior;
 import org.example.Models.Entities.UserEntity;
 import org.example.Views.CoreMiddleWare;
 import org.example.Views.UserViews.LoginView;
-import org.example.Views.UserViews.RegisterView;
 
 import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.io.IOException;
-import java.util.EventListener;
 
 public class LoginController implements CoreController {
     private LoginView view;

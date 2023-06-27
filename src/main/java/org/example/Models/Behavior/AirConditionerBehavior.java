@@ -82,7 +82,18 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
             ObjectOutputStream in = new ObjectOutputStream(airConditionerFile);
             in.writeObject(airConditioneres);
             logger.info(log + airConditionerEntity.toString());
-        }catch (Exception e) {
+        }catch (FileNotFoundException e) {
+            File file = new File(filePath);
+            try {
+                file.createNewFile();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+            writeData(log, airConditionerEntity);
+            logger.info("airConditioneres file created");
+
+        }
+        catch (Exception e) {
             logger.fatal(e.toString());
             return false;
         }
@@ -97,7 +108,6 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
         } catch (FileNotFoundException e) {
             File file = new File(filePath);
             file.createNewFile();
-
             logger.info("airConditioneres file created");
 
         } catch (IOException e) {
