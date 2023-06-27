@@ -11,9 +11,10 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class WaterCoolerBehavior implements CoolSystemBehavior {
+    private  String filePath = "src/main/java/org/example/Models/Files/waterCooler.ser";
     private static WaterCoolerBehavior instance;
     private ArrayList<WaterCoolerEntity> watercooleres;
-    private static final Logger logger = LogManager.getLogger(AirConditionerBehavior.class);
+    private static final Logger logger = LogManager.getLogger(WaterCoolerBehavior.class);
 
     public  static WaterCoolerBehavior singelton() throws IOException {
         if (instance == null)
@@ -48,13 +49,13 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
         return false;
     }
     private ArrayList<WaterCoolerEntity> read() throws IOException {
-        try(FileInputStream usersFile = new FileInputStream("../../Files/waterCooler.txt")){
+        try(FileInputStream usersFile = new FileInputStream(filePath)){
             ObjectInputStream in = new ObjectInputStream(usersFile);
             ArrayList<WaterCoolerEntity> watercooleresFake = (ArrayList<WaterCoolerEntity>) in.readObject();
             logger.info("file waterCooler readed");
             return watercooleresFake;
         } catch (FileNotFoundException e) {
-            File file = new File("../../Files/waterCooler.txt");
+            File file = new File(filePath);
             file.createNewFile();
             logger.info("file waterCooler created");
 
@@ -63,5 +64,40 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
           logger.fatal(e.toString());
         }
         return null;
+    }
+    private boolean write() throws IOException {
+        try(FileOutputStream waterCoolFile = new FileOutputStream(filePath)){
+            ObjectOutputStream out = new ObjectOutputStream(waterCoolFile);
+            out.writeObject(watercooleres);
+            logger.info("file waterCooler writed");
+            return true;
+        } catch (FileNotFoundException e) {
+            File file = new File(filePath);
+            file.createNewFile();
+
+            logger.info("file waterCooler created");
+            return true;
+        } catch (Exception e) {
+            logger.fatal(e.toString());
+        }
+        return false;
+    }
+    private boolean resetFile() throws IOException {
+        try(FileOutputStream waterCoolFile = new FileOutputStream(filePath)){
+            ObjectOutputStream out = new ObjectOutputStream(waterCoolFile);
+            watercooleres = new ArrayList<>();
+            out.writeObject(watercooleres);
+            logger.info("file waterCooler writed");
+            return true;
+        } catch (FileNotFoundException e) {
+            File file = new File(filePath);
+            file.createNewFile();
+            write();
+            logger.info("file waterCooler created");
+            return true;
+        } catch (Exception e) {
+            logger.fatal(e.toString());
+        }
+        return false;
     }
 }

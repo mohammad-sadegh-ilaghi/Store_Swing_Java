@@ -1,8 +1,9 @@
 package org.example.Models.Entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class AirConditionerEntity extends CoolSystemEntity {
+public class AirConditionerEntity extends CoolSystemEntity implements Serializable {
     private String theOutputIsTwoWay;
     private String coolingCapacityBTUh;
     private String coolingCapacityKw;

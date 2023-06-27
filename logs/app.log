@@ -1,0 +1,106 @@
+2023-06-26 19:16:35.580 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 19:16:35.592 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-26 19:56:58.662 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 19:56:58.664 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-26 19:57:23.729 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 19:57:23.731 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-26 20:00:25.803 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 20:00:25.805 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-26 20:01:45.435 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 20:06:26.625 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 20:07:38.318 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 20:09:25.991 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 20:10:02.291 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 20:57:55.216 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 20:59:05.157 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 20:59:46.574 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 21:00:15.975 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 21:01:26.825 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user file created 
+2023-06-26 21:01:28.731 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user with username :try to login
+2023-06-26 21:01:36.632 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - user with username :xfdsf try to login
+2023-06-27 10:36:07.209 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:37:00.181 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:37:34.149 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:42:50.110 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:43:21.318 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:43:38.003 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:46:52.883 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:48:42.645 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:50:19.394 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:51:06.318 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:51:34.952 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:52:19.925 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 10:52:59.628 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 11:26:14.820 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 11:26:56.766 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.UserBehavior - java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:27:22.116 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseini9266try to login
+2023-06-27 11:29:01.353 [AWT-EventQueue-0] WARN  org.example.Models.Behavior.UserBehavior - java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:29:01.356 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 11:29:51.058 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.UserBehavior - java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:32:56.460 [AWT-EventQueue-0] WARN  org.example.Models.Behavior.UserBehavior - java.io.FileNotFoundException: src/main/java/org/example/Models/Files/users.ser (No such file or directory)
+2023-06-27 11:32:56.463 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 11:33:23.677 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.UserBehavior - java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:33:57.758 [AWT-EventQueue-0] WARN  org.example.Models.Behavior.UserBehavior - java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:33:57.759 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 11:34:32.738 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.UserBehavior - java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:35:03.881 [AWT-EventQueue-0] WARN  org.example.Models.Behavior.UserBehavior - writing aborted; java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:35:03.883 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 11:35:30.757 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.UserBehavior - java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:36:05.050 [AWT-EventQueue-0] WARN  org.example.Models.Behavior.UserBehavior - writing aborted; java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:36:05.052 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 11:36:23.674 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.UserBehavior - org.example.Models.Entities.UserEntity
+2023-06-27 11:37:00.490 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.UserBehavior - org.example.Models.Entities.UserEntity
+2023-06-27 11:55:25.049 [AWT-EventQueue-0] WARN  org.example.Models.Behavior.UserBehavior - writing aborted; java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:55:25.051 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 11:57:10.181 [AWT-EventQueue-0] WARN  org.example.Models.Behavior.UserBehavior - writing aborted; java.io.NotSerializableException: org.example.Models.Entities.UserEntity
+2023-06-27 11:57:10.183 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 11:57:29.870 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user created account: UserEntity{userName='YSYUG', numberPhone='3497', password='3497', hashPassword='27335c6f0f67cb71eb11377aa44c8c1dee360050e9c98b85ba13bc0a9c58dbc2', email='DYF', created=Tue Jun 27 11:57:29 IRST 2023}
+2023-06-27 11:57:44.058 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 11:58:16.203 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user created account: UserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 11:58:16 IRST 2023}
+2023-06-27 11:58:31.596 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseini9266try to login
+2023-06-27 11:58:46.761 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 11:58:50.401 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 12:01:33.461 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 12:01:42.933 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 12:02:33.844 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 12:03:08.120 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user created account: UserEntity{userName='m.ilaghi', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.ilaghi@gmail.com', created=Tue Jun 27 12:03:08 IRST 2023}
+2023-06-27 12:03:36.877 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.ilaghitry to login
+2023-06-27 12:04:37.694 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 12:05:25.598 [AWT-EventQueue-0] WARN  org.example.Models.Behavior.UserBehavior - src/main/java/org/example/Models/Files/users.ser (No such file or directory)
+2023-06-27 12:05:25.601 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file created 
+2023-06-27 12:06:03.599 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user created account: UserEntity{userName='m.hoseini', numberPhone='09162785273', password='09162785273', hashPassword='041315fa36b25e90dfd56bf8a5bfb36699b4c39071cc5605828ac3cdf240f7f3', email='m.hoseini9266@gmail.com', created=Tue Jun 27 12:06:03 IRST 2023}
+2023-06-27 12:06:23.495 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 12:06:58.064 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 12:08:39.310 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 12:08:49.301 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 12:09:13.276 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 12:09:22.825 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 12:09:29.786 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :try to login
+2023-06-27 12:09:33.185 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :dftry to login
+2023-06-27 12:09:38.530 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :try to login
+2023-06-27 13:00:52.632 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:01:58.833 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 13:30:17.305 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:31:05.804 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:31:22.421 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:44:00.585 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:54:56.094 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:55:17.692 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 13:55:59.682 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:56:09.517 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 13:57:05.364 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:57:22.948 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:57:59.764 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:58:08.943 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 13:58:59.861 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 13:59:11.634 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 13:59:50.803 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 14:00:00.684 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 14:03:49.806 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 14:04:00.678 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 14:04:22.352 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 14:04:35.648 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 14:04:54.822 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 14:05:05.530 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login
+2023-06-27 14:06:16.674 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-27 14:06:27.985 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :m.hoseinitry to login

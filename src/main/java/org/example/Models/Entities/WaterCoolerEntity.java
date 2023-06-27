@@ -1,8 +1,9 @@
 package org.example.Models.Entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class WaterCoolerEntity extends CoolSystemEntity{
+public class WaterCoolerEntity extends CoolSystemEntity implements Serializable {
     private String bodyMaterial;
     private String dimention;
     private  String maximumWindPower;

@@ -13,9 +13,10 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class FanEntitiyBehavior implements CoolSystemBehavior {
+    private String filePath = "src/main/java/org/example/Models/Files/fans.ser";
     private static FanEntitiyBehavior instance;
     private ArrayList<FanEntity> fans;
-    private static final Logger logger = LogManager.getLogger(AirConditionerBehavior.class);
+    private static final Logger logger = LogManager.getLogger(FanEntitiyBehavior.class);
     public static FanEntitiyBehavior singelton() throws IOException {
             if (instance ==null)
                 instance = new FanEntitiyBehavior();
@@ -85,14 +86,14 @@ public class FanEntitiyBehavior implements CoolSystemBehavior {
         return true;
     }
     private ArrayList<FanEntity> read() throws IOException {
-        try(FileInputStream fansFile = new FileInputStream("../../Files/fans.txt")){
+        try(FileInputStream fansFile = new FileInputStream(filePath)){
             ObjectInputStream in = new ObjectInputStream(fansFile);
             ArrayList<FanEntity> fakefans = (ArrayList<FanEntity>) in.readObject();
             logger.info("fans from file loaded");
             return fakefans;
 
         } catch (FileNotFoundException e) {
-            File file = new File("../../Files/fans.txt");
+            File file = new File(filePath);
             file.createNewFile();
 
             logger.info("fans created");
@@ -104,13 +105,28 @@ public class FanEntitiyBehavior implements CoolSystemBehavior {
         return null;
     }
     private boolean write(String log, FanEntity fan) throws IOException {
-        try(FileOutputStream fileStream = new FileOutputStream("../../Files/fans.txt")) {
+        try(FileOutputStream fileStream = new FileOutputStream(filePath)) {
             ObjectOutputStream out = new ObjectOutputStream(fileStream);
             out.writeObject(fans);
             logger.info(log + fan);
             return  true;
         } catch (FileNotFoundException e) {
-            File file = new File("../../Files/fans.txt");
+            File file = new File(filePath);
+            file.createNewFile();
+            logger.info("fans created");
+        } catch (Exception e) {
+            logger.fatal(e.toString());
+        }
+        return false;
+    }
+    private boolean resetFile(String log, FanEntity fan) throws IOException {
+        try(FileOutputStream fileStream = new FileOutputStream(filePath)) {
+            ObjectOutputStream out = new ObjectOutputStream(fileStream);
+            fans = new ArrayList<>();
+            out.writeObject(fans);
+            return  true;
+        } catch (FileNotFoundException e) {
+            File file = new File(filePath);
             file.createNewFile();
             logger.info("fans created");
         } catch (Exception e) {

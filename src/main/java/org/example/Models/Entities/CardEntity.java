@@ -1,6 +1,8 @@
 package org.example.Models.Entities;
 
-public class CardEntity {
+import java.io.Serializable;
+
+public class CardEntity implements Serializable {
     private int IdCard;
     private String bank;
     private int inventory;

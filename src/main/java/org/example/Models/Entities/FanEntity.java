@@ -1,8 +1,9 @@
 package org.example.Models.Entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class FanEntity extends CoolSystemEntity {
+public class FanEntity extends CoolSystemEntity implements Serializable {
     private int length;
     private String type;
     private boolean haveremoteController;

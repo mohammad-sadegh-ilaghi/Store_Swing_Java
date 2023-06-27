@@ -1,11 +1,12 @@
 package org.example.Models.Entities;
 
+import java.io.Serializable;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 
-public class UserEntity {
+public class UserEntity implements Serializable {
     private String userName;
     private String numberPhone;
     private String password;
@@ -29,7 +30,11 @@ public class UserEntity {
 
     public UserEntity(String userName, String password) {
         this.userName = userName;
-        this.password = password;
+        try {
+            setPassword(password);
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
     }
     public String hashPassword(String password) throws NoSuchAlgorithmException {
         MessageDigest digest = MessageDigest.getInstance("SHA-256");

@@ -10,6 +10,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class AirConditionerBehavior implements CoolSystemBehavior {
+    private String filePath ="src/main/java/org/example/Models/Files/airConditioner.ser";
     private static AirConditionerBehavior instance;
     private ArrayList<AirConditionerEntity> airConditioneres;
     private static final Logger logger = LogManager.getLogger(AirConditionerBehavior.class);
@@ -77,7 +78,7 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
         return true;
     }
     private boolean writeData(String log, AirConditionerEntity airConditionerEntity){
-        try(FileOutputStream airConditionerFile = new FileOutputStream("../../Files/airConditioner.txt")){
+        try(FileOutputStream airConditionerFile = new FileOutputStream(filePath)){
             ObjectOutputStream in = new ObjectOutputStream(airConditionerFile);
             in.writeObject(airConditioneres);
             logger.info(log + airConditionerEntity.toString());
@@ -88,13 +89,13 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
         return true;
     }
     private ArrayList<AirConditionerEntity> readAirConditionFromFile() throws IOException {
-        try(FileInputStream airConditionerFile = new FileInputStream("../../Files/airConditioner.txt")){
+        try(FileInputStream airConditionerFile = new FileInputStream(filePath)){
             ObjectInputStream in = new ObjectInputStream(airConditionerFile);
             ArrayList<AirConditionerEntity> list = (ArrayList<AirConditionerEntity>) in.readObject();
             logger.info("airConditioneres file loaded");
             return list;
         } catch (FileNotFoundException e) {
-            File file = new File("../../Files/airConditioner.txt");
+            File file = new File(filePath);
             file.createNewFile();
 
             logger.info("airConditioneres file created");
@@ -105,5 +106,21 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
             logger.error(e.toString());
         }
         return new ArrayList<>();
+    }
+    public boolean removeDataFromFile() throws IOException {
+        try (FileOutputStream file = new FileOutputStream(filePath)){
+            ObjectOutputStream out = new ObjectOutputStream(file);
+            airConditioneres = new ArrayList<>();
+            out.writeObject(airConditioneres);
+            logger.info("file removed data.");
+            return true;
+        } catch (FileNotFoundException e) {
+            File file = new File(filePath);
+            file.createNewFile();
+            logger.fatal("can not find file of user");
+        } catch (Exception e) {
+            logger.fatal(e.getMessage());
+        }
+        return false;
     }
 }
