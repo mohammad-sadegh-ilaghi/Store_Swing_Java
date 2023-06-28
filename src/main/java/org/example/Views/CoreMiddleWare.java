@@ -1,5 +1,7 @@
 package org.example.Views;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.example.Configure.UserConfigure;
 import org.example.Controllers.AirConditionerControlleres.CreateEditAirConditionerController;
 import org.example.Controllers.AirConditionerControlleres.ListAirConditioerController;
@@ -10,6 +12,7 @@ import org.example.Controllers.UserControlleres.LoginController;
 import org.example.Controllers.UserControlleres.RegisterController;
 import org.example.Controllers.WaterCoolerControlleres.CreateEditWaterCoolerController;
 import org.example.Controllers.WaterCoolerControlleres.ListWaterCoolerController;
+import org.example.Models.Behavior.AirConditionerBehavior;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,6 +24,7 @@ public class CoreMiddleWare {
     private static CoreMiddleWare instance;
     private JFrame frame;
     private JPanel panel;
+    private static final Logger logger = LogManager.getLogger(AirConditionerBehavior.class);
     MenuBar menuBar = new MenuBar();
     //<editor-fold defaultstate="collapsed" desc="menu">
 
@@ -108,7 +112,7 @@ public class CoreMiddleWare {
                     try {
                        editUserController = new EditUserController();
                     } catch (IOException ex) {
-                        throw new RuntimeException(ex);
+                        logger.fatal(ex.getMessage());
                     }
                     setPanel(editUserController.getPanel());
                 }
@@ -125,7 +129,7 @@ public class CoreMiddleWare {
                     try {
                         fan = new CreateEditFanController();
                     } catch (IOException ex) {
-                        throw new RuntimeException(ex);
+                        logger.fatal(ex.getMessage());
                     }
                     setPanel(fan.getPanel());
                 }
@@ -137,6 +141,7 @@ public class CoreMiddleWare {
                     try {
                         fan = new ListFanController();
                     } catch (IOException ex) {
+                        logger.fatal(ex.getMessage());
                         throw new RuntimeException(ex);
                     }
                     setPanel(fan.getPanel());
@@ -152,7 +157,7 @@ public class CoreMiddleWare {
                     try {
                         waterCooler = new ListWaterCoolerController();
                     } catch (IOException ex) {
-                        throw new RuntimeException(ex);
+                        logger.fatal(ex.getMessage());
                     }
                     setPanel(waterCooler.getPanel());
                 }
@@ -164,7 +169,7 @@ public class CoreMiddleWare {
                     try {
                         waterCooler = new CreateEditWaterCoolerController();
                     } catch (IOException ex) {
-                        throw new RuntimeException(ex);
+                        logger.fatal(ex.getMessage());
                     }
                     setPanel(waterCooler.getPanel());
                 }
@@ -178,7 +183,7 @@ public class CoreMiddleWare {
                     try {
                         airConditioerController = new CreateEditAirConditionerController();
                     } catch (IOException ex) {
-                        throw new RuntimeException(ex);
+                        logger.fatal(ex.getMessage());
                     }
                     setPanel(airConditioerController.getPanel());
                 }
@@ -190,7 +195,7 @@ public class CoreMiddleWare {
                     try {
                         airConditioerController = new ListAirConditioerController();
                     } catch (IOException ex) {
-                        throw new RuntimeException(ex);
+                        logger.fatal(ex.getMessage());
                     }
                     setPanel(airConditioerController.getPanel());
                 }
@@ -215,7 +220,7 @@ public class CoreMiddleWare {
                     try {
                         login = new LoginController();
                     } catch (IOException ex) {
-                        throw new RuntimeException(ex);
+                        logger.fatal(ex.getMessage());
                     }
                     setPanel(login.getPanel());
                 }
@@ -227,7 +232,7 @@ public class CoreMiddleWare {
                     try {
                         register = new RegisterController();
                     } catch (IOException ex) {
-                        throw new RuntimeException(ex);
+                        logger.fatal(ex.getMessage());
                     }
                     setPanel(register.getPanel());
                 }
@@ -250,10 +255,15 @@ public class CoreMiddleWare {
             }
         });
         //</editor-fold>
-
-
-
-
+        if (!UserConfigure.singlton().isLogin()){
+            LoginController loginController = null;
+            try {
+                loginController = new LoginController();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            panel.add(loginController.getPanel());
+        }
 
         frame.setMenuBar(menuBar);
         frame.add(panel);

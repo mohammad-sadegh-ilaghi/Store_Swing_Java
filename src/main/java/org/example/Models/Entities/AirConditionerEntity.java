@@ -1,6 +1,7 @@
 package org.example.Models.Entities;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class AirConditionerEntity extends CoolSystemEntity implements Serializable {
@@ -8,16 +9,24 @@ public class AirConditionerEntity extends CoolSystemEntity implements Serializab
     private String coolingCapacityBTUh;
     private String coolingCapacityKw;
     private String heatingCapacityBTUh;
-    private String ThreeRowCoil;
+    private String threeRowCoil;
 
-    public AirConditionerEntity(String brand, Date dateOfCreated, String made, int numbers, String photo, String power, boolean isNew, Date warranty, String energyLabel, String weight, String theOutputIsTwoWay, String coolingCapacityBTUh, String coolingCapacityKw, String heatingCapacityBTUh, String threeRowCoil) {
-        super(photo, brand, dateOfCreated, made, numbers, power, isNew, warranty, energyLabel, weight);
+    public AirConditionerEntity(String brand, LocalDate dateOfCreated, String made, int numbers, String power, boolean isNew, LocalDate warranty, String energyLabel, String weight, String theOutputIsTwoWay, String coolingCapacityBTUh, String coolingCapacityKw, String heatingCapacityBTUh, String threeRowCoil) {
+        super(brand, dateOfCreated, made, numbers, power, isNew, warranty, energyLabel, weight);
 
         this.theOutputIsTwoWay = theOutputIsTwoWay;
         this.coolingCapacityBTUh = coolingCapacityBTUh;
         this.coolingCapacityKw = coolingCapacityKw;
         this.heatingCapacityBTUh = heatingCapacityBTUh;
-        ThreeRowCoil = threeRowCoil;
+        this.threeRowCoil = threeRowCoil;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        AirConditionerEntity airConditioner = (AirConditionerEntity) obj;
+        if (getId() == airConditioner.getId())
+            return true;
+        return false;
     }
 
     public String getTheOutputIsTwoWay() {
@@ -53,11 +62,11 @@ public class AirConditionerEntity extends CoolSystemEntity implements Serializab
     }
 
     public String getThreeRowCoil() {
-        return ThreeRowCoil;
+        return threeRowCoil;
     }
 
     public void setThreeRowCoil(String threeRowCoil) {
-        ThreeRowCoil = threeRowCoil;
+        this.threeRowCoil = threeRowCoil;
     }
 
     @Override
@@ -67,7 +76,7 @@ public class AirConditionerEntity extends CoolSystemEntity implements Serializab
                 ", coolingCapacityBTUh='" + coolingCapacityBTUh + '\'' +
                 ", coolingCapacityKw='" + coolingCapacityKw + '\'' +
                 ", heatingCapacityBTUh='" + heatingCapacityBTUh + '\'' +
-                ", ThreeRowCoil='" + ThreeRowCoil + '\'' +
+                ", ThreeRowCoil='" + threeRowCoil + '\'' +
                 super.toString() +
                 '}';
     }

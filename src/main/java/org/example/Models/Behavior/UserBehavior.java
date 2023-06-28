@@ -3,6 +3,7 @@ package org.example.Models.Behavior;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.Configure.UserConfigure;
+import org.example.Models.Entities.AirConditionerEntity;
 import org.example.Models.Entities.UserEntity;
 
 import java.io.*;
@@ -51,14 +52,13 @@ public class UserBehavior implements Serializable{
                                 || item.getNumberPhone().trim().equals(user.getNumberPhone())).count() > 0;
     }
     public boolean edit(UserEntity user) throws NoSuchAlgorithmException {
-        UserEntity userMain  = users.stream()
-                .filter(item -> item.getEmail() == item.getEmail())
-                .toList()
-                .get(0);
-        user.getCardBank().setInventory(userMain.getCardBank().getInventory());
-        userMain = user;
-        System.out.println("user is " + user );
-        users.forEach(System.out::println);
+        int index = 0;
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).getEmail().trim().toUpperCase().equals(user.getEmail().toUpperCase().trim()))
+                index = i;
+        }
+        user.getCardBank().setInventory(users.get(index).getCardBank().getInventory());
+        users.set(index, user);
         boolean result = false;
         try {
             result = write("edit user", user);
@@ -69,6 +69,7 @@ public class UserBehavior implements Serializable{
             return false;
         return true;
     }
+
     public boolean login(UserEntity user){
         logger.info("user with username :" + user.getUserName() + "try to login");
         if (users.stream().filter(item ->item.getHashPassword().equals(user.getHashPassword()) &&

@@ -1,6 +1,7 @@
 package org.example.Models.Entities;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class FanEntity extends CoolSystemEntity implements Serializable {
@@ -11,8 +12,8 @@ public class FanEntity extends CoolSystemEntity implements Serializable {
     private String windVolume;
     private String lengthOfCable;
 
-    public FanEntity(String photo, String brand, Date dateOfCreated, String made, int numbers, String power, boolean isNew, Date warranty, String energyLabel, String weight, int length, String type, boolean haveremoteController, String dimension, String windVolume, String lengthOfCable) {
-        super(photo, brand, dateOfCreated, made, numbers, power, isNew, warranty, energyLabel, weight);
+    public FanEntity(String photo, String brand, LocalDate dateOfCreated, String made, int numbers, String power, boolean isNew, LocalDate warranty, String energyLabel, String weight, int length, String type, boolean haveremoteController, String dimension, String windVolume, String lengthOfCable) {
+        super(brand, dateOfCreated, made, numbers, power, isNew, warranty, energyLabel, weight);
         this.length = length;
         this.type = type;
         this.haveremoteController = haveremoteController;

@@ -1,23 +1,24 @@
 package org.example.Models.Entities;
 
-import java.util.Date;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.io.Serializable;
+import java.math.BigInteger;
+import java.time.LocalDate;
+import java.util.UUID;
 
-public abstract class CoolSystemEntity {
+public abstract class CoolSystemEntity implements Serializable {
     private String brand;
-    private int id;
+    private BigInteger id;
 
-    private Date dateOfCreated;
+    private LocalDate dateOfCreated;
     private String made;
     private int numbers;
     private  String power;
     private boolean isNew;
-    private String photo;
-    private Date warranty;
+    private LocalDate warranty;
     private String EnergyLabel;
     private String weight;
 
-    public CoolSystemEntity(String photo, String brand, Date dateOfCreated, String made, int numbers, String power, boolean isNew, Date warranty, String energyLabel, String weight) {
+    public CoolSystemEntity(String brand, LocalDate dateOfCreated, String made, int numbers, String power, boolean isNew, LocalDate warranty, String energyLabel, String weight) {
         this.brand = brand;
         this.dateOfCreated = dateOfCreated;
         this.made = made;
@@ -27,14 +28,12 @@ public abstract class CoolSystemEntity {
         this.warranty = warranty;
         EnergyLabel = energyLabel;
         this.weight = weight;
-        this.photo = photo;
-        AtomicInteger uniqueId = new AtomicInteger(0);
 
 // Generate a unique integer value
-        id = uniqueId.getAndIncrement();
+        id = new BigInteger(String.format("%010d",new BigInteger(UUID.randomUUID().toString().replace("-",""),16)));
     }
 
-    public int getId() {
+    public BigInteger getId() {
         return id;
     }
 
@@ -78,11 +77,11 @@ public abstract class CoolSystemEntity {
         isNew = aNew;
     }
 
-    public Date getWarranty() {
+    public LocalDate getWarranty() {
         return warranty;
     }
 
-    public void setWarranty(Date warranty) {
+    public void setWarranty(LocalDate warranty) {
         this.warranty = warranty;
     }
 
@@ -101,13 +100,17 @@ public abstract class CoolSystemEntity {
     public void setWeight(String weight) {
         this.weight = weight;
     }
-    public Date getDateOfCreated() {
+    public LocalDate getDateOfCreated() {
         return dateOfCreated;
     }
 
-    public void setDateOfCreated(Date dateOfCreated) {
+    public void setDateOfCreated(LocalDate dateOfCreated) {
 
         this.dateOfCreated = dateOfCreated;
+    }
+
+    public void setId(BigInteger id) {
+        this.id = id;
     }
 
     @Override
@@ -120,7 +123,6 @@ public abstract class CoolSystemEntity {
                 ", numbers=" + numbers +
                 ", power='" + power + '\'' +
                 ", isNew=" + isNew +
-                ", photo='" + photo + '\'' +
                 ", warranty=" + warranty +
                 ", EnergyLabel='" + EnergyLabel + '\'' +
                 ", weight='" + weight + '\'' +

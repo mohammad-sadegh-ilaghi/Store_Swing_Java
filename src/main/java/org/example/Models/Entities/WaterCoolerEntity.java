@@ -1,6 +1,7 @@
 package org.example.Models.Entities;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class WaterCoolerEntity extends CoolSystemEntity implements Serializable {
@@ -18,8 +19,8 @@ public class WaterCoolerEntity extends CoolSystemEntity implements Serializable 
     private String type;
     private String internalPanelMaterial;
 
-    public WaterCoolerEntity(String photo, String brand, Date dateOfCreated, String made, int numbers, String power, boolean isNew, Date warranty, String energyLabel, String weight, String bodyMaterial, String dimention, String maximumWindPower, String pumpPower, String comsumptionWaterPeerHours, String remoteController, String airConditionerFacilities, String inverter, String eERCoolingEfficiency, String cOPHeatingEfficiency, int numberOfPanels, String type, String internalPanelMaterial) {
-        super(photo, brand, dateOfCreated, made, numbers, power, isNew, warranty, energyLabel, weight);
+    public WaterCoolerEntity(String photo, String brand, LocalDate dateOfCreated, String made, int numbers, String power, boolean isNew, LocalDate warranty, String energyLabel, String weight, String bodyMaterial, String dimention, String maximumWindPower, String pumpPower, String comsumptionWaterPeerHours, String remoteController, String airConditionerFacilities, String inverter, String eERCoolingEfficiency, String cOPHeatingEfficiency, int numberOfPanels, String type, String internalPanelMaterial) {
+        super(brand, dateOfCreated, made, numbers, power, isNew, warranty, energyLabel, weight);
         this.bodyMaterial = bodyMaterial;
         this.dimention = dimention;
         this.maximumWindPower = maximumWindPower;
