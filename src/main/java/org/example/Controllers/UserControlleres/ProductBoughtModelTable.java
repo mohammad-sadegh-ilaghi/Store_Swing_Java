@@ -1,5 +1,6 @@
 package org.example.Controllers.UserControlleres;
 
+import org.example.Factory.FactoryEntities;
 import org.example.Models.Entities.FanEntity;
 import org.example.Models.Entities.ProductBought;
 
@@ -14,7 +15,7 @@ public class ProductBoughtModelTable extends AbstractTableModel {
     public ProductBoughtModelTable(ArrayList<ProductBought> productBoughts){
         Field[] fields = getAllFields(FanEntity.class);
         // convert the fields to an array of field names
-        columnNames = new String[]{"UserName", "Id_Product", "Numbers"};
+        columnNames = new String[]{"UserName", "Id_Product", "Numbers", "Type"};
 
         this.productBoughtes = productBoughts;
     }
@@ -42,6 +43,8 @@ public class ProductBoughtModelTable extends AbstractTableModel {
                 break;
             case 2:
                 value = air.getNumbers();
+            case 3:
+                value = FactoryEntities.getType(air.getCoolSystem());
         }
         return value;
     }

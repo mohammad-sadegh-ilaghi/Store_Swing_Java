@@ -2158,3 +2158,304 @@
 2023-06-29 19:25:52.014 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
 2023-06-29 19:26:55.997 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - add fan :FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
 2023-06-29 19:26:56.026 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - add fan :FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 20:31:08.157 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:31:12.008 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 20:32:03.143 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:32:11.627 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 20:34:18.805 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:34:21.263 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 20:34:33.851 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 20:42:27.920 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:42:30.850 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 20:42:41.955 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 20:44:48.273 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:44:52.817 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :mtry to login
+2023-06-29 20:46:09.714 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:46:12.184 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 20:50:08.586 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:50:12.800 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 20:52:27.571 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:52:35.666 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 20:53:25.747 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:53:29.473 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 20:57:28.811 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 20:57:31.547 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:41:04.068 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:41:11.683 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:41:51.063 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:41:54.643 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:42:57.133 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:43:03.293 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:54:02.066 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:54:04.888 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:55:14.330 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:55:16.889 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:56:13.414 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:56:15.994 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:56:44.850 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:56:49.021 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:56:55.092 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 21:57:25.902 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:57:28.314 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:57:37.399 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 21:58:29.263 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:59:02.589 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:59:15.507 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 21:59:18.781 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 21:59:31.549 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:01:05.204 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:01:08.253 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:01:33.560 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:01:35.677 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:09:34.635 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:09:37.538 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:09:45.533 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:10:06.523 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres file loaded
+2023-06-29 22:10:06.524 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-29 22:10:06.524 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:10:51.087 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:10:55.385 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:11:03.388 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:11:16.530 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:11:16.547 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres file loaded
+2023-06-29 22:11:16.548 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-29 22:11:16.548 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:11:27.675 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.FanEntitiyBehavior - java.io.InvalidClassException: org.example.Models.Entities.ProductBought; local class incompatible: stream classdesc serialVersionUID = -5178564535280373427, local class serialVersionUID = 3502684884901975527
+2023-06-29 22:11:45.063 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:11:47.972 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:11:53.492 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:14:57.330 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:14:59.810 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:15:06.745 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:15:06.752 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres file loaded
+2023-06-29 22:15:06.752 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-29 22:15:06.753 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:15:06.758 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:18:40.817 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:18:44.023 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:19:06.213 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:21:34.730 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:21:42.930 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:21:50.477 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:21:50.500 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres file loaded
+2023-06-29 22:21:50.500 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-29 22:21:50.500 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:21:50.538 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:22:25.747 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.FanEntitiyBehavior - java.io.InvalidClassException: org.example.Models.Entities.ProductBought; local class incompatible: stream classdesc serialVersionUID = -5178564535280373427, local class serialVersionUID = 3502684884901975527
+2023-06-29 22:23:52.306 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:23:55.801 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:24:00.262 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.FanEntitiyBehavior - java.io.InvalidClassException: org.example.Models.Entities.ProductBought; local class incompatible: stream classdesc serialVersionUID = -5178564535280373427, local class serialVersionUID = 3502684884901975527
+2023-06-29 22:24:04.808 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres file loaded
+2023-06-29 22:24:04.809 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-29 22:24:04.811 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:06.749 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user bought new productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=100, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 0} 
+
+2023-06-29 22:24:06.750 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=99, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:06.750 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:06.851 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=99, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 1} 
+
+2023-06-29 22:24:06.854 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=98, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:06.855 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:06.978 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=98, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 2} 
+
+2023-06-29 22:24:06.981 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=97, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:06.982 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:07.106 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=97, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 3} 
+
+2023-06-29 22:24:07.109 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=96, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:07.110 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:07.232 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=96, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 4} 
+
+2023-06-29 22:24:07.233 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=95, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:07.234 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:07.362 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=95, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 5} 
+
+2023-06-29 22:24:07.364 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=94, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:07.365 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:07.473 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=94, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 6} 
+
+2023-06-29 22:24:07.475 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=93, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:07.476 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:07.602 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=93, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 7} 
+
+2023-06-29 22:24:07.604 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=92, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:07.605 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:07.858 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=92, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 8} 
+
+2023-06-29 22:24:07.861 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=91, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:07.862 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:09.561 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:24:27.880 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:24:35.955 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:37.285 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=91, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 9} 
+
+2023-06-29 22:24:37.288 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=90, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:37.288 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:37.453 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=90, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 10} 
+
+2023-06-29 22:24:37.455 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=89, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:37.456 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:24:37.603 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=89, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 11} 
+
+2023-06-29 22:24:37.604 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=88, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:24:37.604 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:25:14.043 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:25:16.762 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:25:22.539 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:25:31.023 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='ha', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:25:31 IRST 2023}
+2023-06-29 22:25:35.815 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:25:35 IRST 2023}
+2023-06-29 22:25:53.401 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:25:58.337 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:27:23.082 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:27:25.487 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:27:28.800 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres file loaded
+2023-06-29 22:27:28.801 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-29 22:27:28.804 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:27:42.925 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:27:50.589 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - edit userUserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}
+2023-06-29 22:27:54.507 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:27:58.623 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:27:58.632 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:27:58.637 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:28:03.678 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:28:03.712 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=89, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 12} 
+
+2023-06-29 22:28:03.713 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=87, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:28:03.714 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:28:04.034 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=89, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 13} 
+
+2023-06-29 22:28:04.037 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=86, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:28:04.038 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:29:00.870 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:29:03.543 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:29:12.223 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:29:49.609 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:29:52.641 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:29:55.543 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:30:18.660 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:30:22.352 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:30:26.191 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:30:40.813 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:32:32.273 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:32:35.049 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:32:38.111 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:32:40.461 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:32:40.502 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user bought new productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 0} 
+
+2023-06-29 22:32:40.503 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:32:45.513 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 1} 
+
+2023-06-29 22:32:45.536 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:32:45.711 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 2} 
+
+2023-06-29 22:32:45.713 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:32:45.957 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 3} 
+
+2023-06-29 22:32:45.959 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:33:26.789 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:33:29.733 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:33:33.821 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:33:35.792 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:33:35.819 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user bought new productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = WaterCoolerEntity{bodyMaterial='uh', dimention='iuh', maximumWindPower='iuh', PumpPower='iuh', comsumptionWaterPeerHours='iuhiu', remoteController='true'}, numbers = 0} 
+
+2023-06-29 22:33:35.821 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler writed
+2023-06-29 22:33:36.067 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = WaterCoolerEntity{bodyMaterial='uh', dimention='iuh', maximumWindPower='iuh', PumpPower='iuh', comsumptionWaterPeerHours='iuhiu', remoteController='true'}, numbers = 1} 
+
+2023-06-29 22:33:36.070 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler writed
+2023-06-29 22:33:36.289 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = WaterCoolerEntity{bodyMaterial='uh', dimention='iuh', maximumWindPower='iuh', PumpPower='iuh', comsumptionWaterPeerHours='iuhiu', remoteController='true'}, numbers = 2} 
+
+2023-06-29 22:33:36.292 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler writed
+2023-06-29 22:33:36.420 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = WaterCoolerEntity{bodyMaterial='uh', dimention='iuh', maximumWindPower='iuh', PumpPower='iuh', comsumptionWaterPeerHours='iuhiu', remoteController='true'}, numbers = 3} 
+
+2023-06-29 22:33:36.424 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler writed
+2023-06-29 22:33:38.453 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres file loaded
+2023-06-29 22:33:38.453 [AWT-EventQueue-0] FATAL org.example.Models.Behavior.AirConditionerBehavior - file can not read and create
+2023-06-29 22:33:38.455 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:33:40.520 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=89, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 14} 
+
+2023-06-29 22:33:40.522 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=85, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:33:40.522 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:33:40.656 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=89, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 15} 
+
+2023-06-29 22:33:40.657 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=84, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:33:40.657 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:33:40.812 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=89, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 16} 
+
+2023-06-29 22:33:40.815 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=83, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:33:40.816 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:33:40.956 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=89, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 17} 
+
+2023-06-29 22:33:40.958 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=82, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:33:40.959 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:33:42.888 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:33:44.829 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 4} 
+
+2023-06-29 22:33:44.830 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:33:44.969 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 5} 
+
+2023-06-29 22:33:44.971 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:33:45.120 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 6} 
+
+2023-06-29 22:33:45.122 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:33:45.296 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 7} 
+
+2023-06-29 22:33:45.298 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:33:45.461 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 8} 
+
+2023-06-29 22:33:45.462 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:33:55.132 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:34:22.545 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = WaterCoolerEntity{bodyMaterial='uh', dimention='iuh', maximumWindPower='iuh', PumpPower='iuh', comsumptionWaterPeerHours='iuhiu', remoteController='true'}, numbers = 4} 
+
+2023-06-29 22:34:22.548 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler writed
+2023-06-29 22:34:24.924 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user bought new productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = WaterCoolerEntity{bodyMaterial='Materia Body', dimention='Dimention', maximumWindPower='uiMacimum WindPower', PumpPower='Pum Power', comsumptionWaterPeerHours='Consum', remoteController='true'}, numbers = 0} 
+
+2023-06-29 22:34:24.925 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler writed
+2023-06-29 22:34:27.377 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:34:29.447 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 16:39:46 IRST 2023}, coolSystem = AirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=89, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+, numbers = 18} 
+
+2023-06-29 22:34:29.450 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - airConditioneres is write new dataAirConditionerEntity: {theOutputIsTwoWay='theOututIsTwoWay', coolingCapacityBTUh='CoolingCapacityBUT/h', coolingCapacityKw='Cooling Capacity Kw', heatingCapacityBTUh='Heating Capacity BTU/h', ThreeRowCoil='Three Row Coil'CoolSystemEntity{brand='Brand', id=267849164561157894557417654363513905508, dateOfCreated=2022-06-29, made='Made', numbers=81, power='Power', isNew=true, warranty=2024-06-29, EnergyLabel='A', weight='weight'}} 
+
+2023-06-29 22:34:29.451 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.AirConditionerBehavior - getAirConditioneres method called
+2023-06-29 22:34:32.512 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - user add number of productProductBought {  user = UserEntity{userName='h', numberPhone='24397', password='h', hashPassword='aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123', email='h@ci.co', created=Thu Jun 29 22:27:50 IRST 2023}, coolSystem = FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}, numbers = 9} 
+
+2023-06-29 22:34:32.514 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - byuy product: FanEntity{length=31, type='type', haveremoteController=true, dimension='dimention', windVolume='wind volume', lengthOfCable='1'}
+2023-06-29 22:40:08.267 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:40:12.773 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:40:18.090 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded

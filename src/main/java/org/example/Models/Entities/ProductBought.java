@@ -42,4 +42,13 @@ public class    ProductBought implements Serializable {
     public int getNumbers() {
         return numbers;
     }
+
+    @Override
+    public String toString() {
+        return "ProductBought { " +
+                " user = " + user +
+                ", coolSystem = " + coolSystem +
+                ", numbers = " + numbers +
+                "} \n";
+    }
 }

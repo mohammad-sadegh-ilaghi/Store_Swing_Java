@@ -71,13 +71,13 @@ public class AirConditionerEntity extends CoolSystemEntity implements Serializab
 
     @Override
     public String toString() {
-        return "AirConditionerEntity{" +
+        return "AirConditionerEntity: {" +
                 "theOutputIsTwoWay='" + theOutputIsTwoWay + '\'' +
                 ", coolingCapacityBTUh='" + coolingCapacityBTUh + '\'' +
                 ", coolingCapacityKw='" + coolingCapacityKw + '\'' +
                 ", heatingCapacityBTUh='" + heatingCapacityBTUh + '\'' +
                 ", ThreeRowCoil='" + threeRowCoil + '\'' +
                 super.toString() +
-                '}';
+                "} \n";
     }
 }

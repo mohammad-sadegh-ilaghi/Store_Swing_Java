@@ -65,7 +65,7 @@ public class ListFanController implements CoreController {
         JTable table = view.getTable();
         int selectedRow = table.getSelectedRow();
         if (selectedRow != -1) {
-            BigInteger id = new BigInteger(table.getValueAt(selectedRow, 6).toString());
+            BigInteger id = new BigInteger(table.getValueAt(selectedRow, 7).toString());
             return id;
         }
         return new BigInteger("-1");

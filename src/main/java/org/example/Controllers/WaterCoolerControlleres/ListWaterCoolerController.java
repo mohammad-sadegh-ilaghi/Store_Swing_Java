@@ -55,7 +55,7 @@ public class ListWaterCoolerController implements CoreController {
         JTable table = view.getTable();
         int selectedRow = table.getSelectedRow();
         if (selectedRow != -1) {
-            BigInteger id = new BigInteger(table.getValueAt(selectedRow, 6).toString());
+            BigInteger id = new BigInteger(table.getValueAt(selectedRow, 7).toString());
             return id;
         }
         return new BigInteger("-1");
@@ -81,7 +81,7 @@ public class ListWaterCoolerController implements CoreController {
         JTable table = view.getTable();
         int selectedRow = table.getSelectedRow();
         if (selectedRow != -1) {
-            BigInteger id = new BigInteger(table.getValueAt(selectedRow, 6).toString());
+            BigInteger id = new BigInteger(table.getValueAt(selectedRow, 8).toString());
             System.out.println(id);
             int outPut = JOptionPane.showOptionDialog(null, "Are you sure to Delete?", "Confirmation",
                     JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null,

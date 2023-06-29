@@ -13,6 +13,7 @@ import org.example.Controllers.UserControlleres.LoginController;
 import org.example.Controllers.UserControlleres.RegisterController;
 import org.example.Controllers.WaterCoolerControlleres.CreateEditWaterCoolerController;
 import org.example.Controllers.WaterCoolerControlleres.ListWaterCoolerController;
+import org.example.FileExports.*;
 import org.example.Models.Behavior.AirConditionerBehavior;
 import org.example.Rules.RulesUser;
 
@@ -101,10 +102,12 @@ public class CoreMiddleWare {
 
         if (user.isLogin()){
             menuBar.add(fanMenu);
+            menuBar.add(file);
             menuBar.add(airConditionerMenu);
             menuBar.add(waterCoolMenu);
             userMenu.add(userEditItem);
             userMenu.add(logout);
+
 
             fanMenu.add(fanListItem);
             airConditionerMenu.add(airConditionerListItem);
@@ -173,28 +176,32 @@ public class CoreMiddleWare {
             });
             //</editor-fold >
             //<editor-fold defaultstate="collapsed" desc="Files actionListener">
+            file.add(fileFans);
+            file.add(fileAirConditioner);
+            file.add(fileWaterCooler);
+            file.add(fileAll);
             fileAll.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-
+                    ExportAllFiles.export();
                 }
             });
             fileFans.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-
+                    ExportFileFan.export();
                 }
             });
             fileWaterCooler.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-
+                    ExportFileWaterCooler.export();
                 }
             });
             fileAirConditioner.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-
+                    ExportFileAirCondition.export();
                 }
             });
 
@@ -273,6 +280,7 @@ public class CoreMiddleWare {
         }
         else if (user.isLogin() && user.getUser().getUserRule().equals(RulesUser.USER)){
             userMenu.add(userBought);
+            file.add(fileBoughtProduct);
             userBought.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -283,7 +291,7 @@ public class CoreMiddleWare {
             fileBoughtProduct.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-
+                    ExportBoughtProduct.export();
                 }
             });
 
