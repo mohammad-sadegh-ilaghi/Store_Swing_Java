@@ -1,7 +1,9 @@
 package org.example.Views.AirConditionerViews;
 
+import org.example.Configure.UserConfigure;
 import org.example.Models.Behavior.AirConditionerBehavior;
 import org.example.Models.Entities.AirConditionerEntity;
+import org.example.Rules.RulesUser;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,23 +17,38 @@ public class ListOfAirConditionerView {
     ArrayList<AirConditionerEntity> airConditionerEntities = null;
     JButton edit = new JButton("Edit");
     JButton delete = new JButton("Delete");
+    JButton buy = new JButton("Buy");
+
     JTable table;
-    public ListOfAirConditionerView(){
+    public ListOfAirConditionerView(ArrayList<AirConditionerEntity> airConditionerEntities){
         panel = new JPanel(new BorderLayout());
-        try {
-             airConditionerEntities = AirConditionerBehavior.singelton().getAirConditioneres();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        this.airConditionerEntities = airConditionerEntities;
         tableModel = new AirConditionerTableModel(airConditionerEntities);
         table = new JTable(tableModel);
         JScrollPane scrollPane = new JScrollPane(table);
         panel.add(scrollPane);
         JPanel buttonsPanel = new JPanel(new GridLayout(1, 2));
-        buttonsPanel.add(delete);
-        buttonsPanel.add(edit);
-        panel.add(buttonsPanel, BorderLayout.SOUTH);
+        if (UserConfigure.singlton().getUser().getUserRule().equals(RulesUser.ADMIN)){
+            buttonsPanel.add(delete);
+            buttonsPanel.add(edit);
+            panel.add(buttonsPanel, BorderLayout.SOUTH);
+        }
+        else {
+            panel.add(buy, BorderLayout.SOUTH);
+        }
     }
+    public void setBuyActionListener(ActionListener actionListener){
+        buy.addActionListener(actionListener);
+    }
+
+    public JButton getBuy() {
+        return buy;
+    }
+
+    public void setBuy(JButton buy) {
+        this.buy = buy;
+    }
+
     public void setEditActionListerer(ActionListener actionListener){
         this.edit.addActionListener(actionListener);
     }
@@ -46,6 +63,14 @@ public class ListOfAirConditionerView {
       this.panel.revalidate();
       this.panel.repaint();
 
+    }
+
+    public ArrayList<AirConditionerEntity> getAirConditionerEntities() {
+        return airConditionerEntities;
+    }
+
+    public void setAirConditionerEntities(ArrayList<AirConditionerEntity> airConditionerEntities) {
+        this.airConditionerEntities = airConditionerEntities;
     }
 
     public AirConditionerTableModel getTableModel() {

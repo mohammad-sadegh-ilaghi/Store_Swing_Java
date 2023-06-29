@@ -8,6 +8,7 @@ import org.example.Models.Entities.FanEntity;
 import org.example.Models.Entities.WaterCoolerEntity;
 
 import java.io.*;
+import java.math.BigInteger;
 import java.util.ArrayList;
 
 public class WaterCoolerBehavior implements CoolSystemBehavior {
@@ -30,22 +31,68 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
     }
     @Override
     public boolean buy(CoolSystemEntity coolSystem) {
+        for (WaterCoolerEntity item : watercooleres){
+            if (item.getId().equals(coolSystem.getId())){
+                item.setNumbers(item.getNumbers() - 1);
+                try {
+                    write("buy one product", (WaterCoolerEntity) coolSystem);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                return true;
+            }
+        }
         return false;
+    }
+
+    public ArrayList<WaterCoolerEntity> getWatercooleres() {
+        return watercooleres;
+    }
+    public WaterCoolerEntity getWatercooler(BigInteger id) {
+        return watercooleres.stream().filter(item -> item.getId().equals(id)).toList().get(0);
     }
 
     @Override
     public boolean create(CoolSystemEntity coolSystem) {
-        return false;
+        WaterCoolerEntity waterCooler = (WaterCoolerEntity) coolSystem;
+        watercooleres.add(waterCooler);
+        boolean result = true;
+        try {
+            result = write("add waterCooler Product :", waterCooler);
+        } catch (IOException e) {
+            logger.fatal(e);
+        }
+        if (!result){
+            watercooleres.removeIf(item -> item.getId().equals(waterCooler.getId()));
+            return result;
+        }
+        return result;
     }
 
     @Override
     public boolean edit(CoolSystemEntity coolSystem) {
-        return false;
+        WaterCoolerEntity waterCooler = (WaterCoolerEntity) coolSystem;
+        boolean result = remove(waterCooler.getId());
+        if (result){
+            result = create(waterCooler);
+        }
+        return result;
     }
 
     @Override
-    public boolean remove(CoolSystemEntity coolSystem) {
-        return false;
+    public boolean remove(BigInteger id) {
+        WaterCoolerEntity waterCooler = watercooleres.stream().filter(item -> item.getId().equals(id)).toList().get(0);
+        boolean result = watercooleres.removeIf(item -> item.getId().equals(waterCooler.getId()));
+        if (result){
+            try {
+                result = write("waterCooler removed: ", waterCooler);
+            } catch (IOException e) {
+                logger.fatal(e.getMessage());
+            }
+        }
+        else
+            watercooleres.add(waterCooler);
+        return result;
     }
     private ArrayList<WaterCoolerEntity> read() throws IOException {
         try(FileInputStream usersFile = new FileInputStream(filePath)){

@@ -8,11 +8,13 @@ import org.example.Controllers.AirConditionerControlleres.ListAirConditioerContr
 import org.example.Controllers.FanControlleres.CreateEditFanController;
 import org.example.Controllers.FanControlleres.ListFanController;
 import org.example.Controllers.UserControlleres.EditUserController;
+import org.example.Controllers.UserControlleres.ListOfBoughtProductController;
 import org.example.Controllers.UserControlleres.LoginController;
 import org.example.Controllers.UserControlleres.RegisterController;
 import org.example.Controllers.WaterCoolerControlleres.CreateEditWaterCoolerController;
 import org.example.Controllers.WaterCoolerControlleres.ListWaterCoolerController;
 import org.example.Models.Behavior.AirConditionerBehavior;
+import org.example.Rules.RulesUser;
 
 import javax.swing.*;
 import java.awt.*;
@@ -33,6 +35,8 @@ public class CoreMiddleWare {
     Menu waterCoolMenu = new Menu("WaterCooler");
     Menu userMenu = new Menu("User");
     Menu helpMenu = new Menu("help");
+    Menu file = new Menu("File");
+
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc=" menu itemes">
@@ -47,6 +51,15 @@ public class CoreMiddleWare {
     MenuItem userLoginItem = new MenuItem("Login");
     MenuItem userRegisterItem = new MenuItem("Register");
     MenuItem userEditItem = new MenuItem("User Edit");
+    MenuItem userBought = new MenuItem("User bought");
+    MenuItem logout = new MenuItem("logout");
+    // file
+    MenuItem fileAll = new MenuItem("Export file text All");
+    MenuItem fileAirConditioner = new MenuItem("Export file text AirCondition");
+    MenuItem fileFans = new MenuItem("Export file text FanCooler");
+    MenuItem fileWaterCooler = new MenuItem("Export file text WaterCooler");
+    MenuItem fileBoughtProduct = new MenuItem("Export file text bought products");
+
 
     // watercool itemes
     MenuItem waterCoolCreateItem = new MenuItem("Create");
@@ -74,6 +87,10 @@ public class CoreMiddleWare {
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+    public void repainAndReValidatePanel(){
+        panel.revalidate();
+        panel.repaint();
+    }
     public void loadFrame(){
         loadMenus();
         UserConfigure user = UserConfigure.singlton();
@@ -81,45 +98,128 @@ public class CoreMiddleWare {
         setPanel(new JPanel());
         menuBar = new MenuBar();
         userMenu.removeAll();
-        if (user.isLogin()){
-            //<editor-fold defaultstate="collapsed" desc="add menues to menubar and menubar to frame">
 
+        if (user.isLogin()){
             menuBar.add(fanMenu);
             menuBar.add(airConditionerMenu);
             menuBar.add(waterCoolMenu);
-
-            //add fan items
-            fanMenu.add(fanCreateItem);
-            fanMenu.add(fanListItem);
-
-
-            //add airConditioner items
-            airConditionerMenu.add(airConditionerCreateItem);
-            airConditionerMenu.add(airConditionerListItem);
-
-            //add user item
             userMenu.add(userEditItem);
-            // add waterCool item
-            waterCoolMenu.add(waterCoolCreateItem);
-            waterCoolMenu.add(waterCoolListItem);
-            //</editor-fold>
+            userMenu.add(logout);
 
+            fanMenu.add(fanListItem);
+            airConditionerMenu.add(airConditionerListItem);
+            waterCoolMenu.add(waterCoolListItem);
             //<editor-fold defaultstate="collapsed" desc="User ActionListerner">
             userEditItem.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     EditUserController editUserController = null;
                     try {
-                       editUserController = new EditUserController();
+                        editUserController = new EditUserController();
                     } catch (IOException ex) {
                         logger.fatal(ex.getMessage());
                     }
                     setPanel(editUserController.getPanel());
                 }
             });
+            logout.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    UserConfigure.singlton().logOut();
+                    loadFrame();
+                    loadMenus();
+                }
+            });
 
             //</editor-fold>
-            //<editor-fold defaultstate="collapsed" desc="action listerneres items">
+            //<editor-fold defaultstate="collapsed" desc=" Product ActionListener">
+
+            fanListItem.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    ListFanController fan = null;
+                    try {
+                        fan = new ListFanController();
+                    } catch (IOException ex) {
+                        logger.fatal(ex.getMessage());
+                        throw new RuntimeException(ex);
+                    }
+                    setPanel(fan.getPanel());
+                }
+            });
+            waterCoolListItem.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    ListWaterCoolerController waterCooler = null;
+                    try {
+                        waterCooler = new ListWaterCoolerController();
+                    } catch (IOException ex) {
+                        logger.fatal(ex.getMessage());
+                    }
+                    setPanel(waterCooler.getPanel());
+                }
+            });
+            airConditionerListItem.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    ListAirConditioerController airConditioerController = null;
+                    try {
+                        airConditioerController = new ListAirConditioerController();
+                    } catch (IOException ex) {
+                        logger.fatal(ex.getMessage());
+                    }
+                    setPanel(airConditioerController.getPanel());
+                }
+            });
+            //</editor-fold >
+            //<editor-fold defaultstate="collapsed" desc="Files actionListener">
+            fileAll.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+            fileFans.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+            fileWaterCooler.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+            fileAirConditioner.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+
+
+            //</editor-fold>
+        }
+        if (user.isLogin() && user.getUser().getUserRule().equals(RulesUser.ADMIN)){
+            //<editor-fold defaultstate="collapsed" desc="add menues to menubar and menubar to frame">
+
+
+
+            //add fan items
+            fanMenu.add(fanCreateItem);
+
+
+            //add airConditioner items
+            airConditionerMenu.add(airConditionerCreateItem);
+
+            //add user item
+            // add waterCool item
+            waterCoolMenu.add(waterCoolCreateItem);
+            //</editor-fold>
+
+
+            //<editor-fold defaultstate="collapsed" desc="fan action listerneres items">
 
 
             fanCreateItem.addActionListener(new ActionListener() {
@@ -134,34 +234,11 @@ public class CoreMiddleWare {
                     setPanel(fan.getPanel());
                 }
             });
-            fanListItem.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    ListFanController fan = null;
-                    try {
-                        fan = new ListFanController();
-                    } catch (IOException ex) {
-                        logger.fatal(ex.getMessage());
-                        throw new RuntimeException(ex);
-                    }
-                    setPanel(fan.getPanel());
-                }
-            });
+
             //</editor-fold>
             //<editor-fold defaultstate="collapsed" desc="waterCooler items">
 
-            waterCoolListItem.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    ListWaterCoolerController waterCooler = null;
-                    try {
-                        waterCooler = new ListWaterCoolerController();
-                    } catch (IOException ex) {
-                        logger.fatal(ex.getMessage());
-                    }
-                    setPanel(waterCooler.getPanel());
-                }
-            });
+
             waterCoolCreateItem.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -188,30 +265,35 @@ public class CoreMiddleWare {
                     setPanel(airConditioerController.getPanel());
                 }
             });
-            airConditionerListItem.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    ListAirConditioerController airConditioerController = null;
-                    try {
-                        airConditioerController = new ListAirConditioerController();
-                    } catch (IOException ex) {
-                        logger.fatal(ex.getMessage());
-                    }
-                    setPanel(airConditioerController.getPanel());
-                }
-            });
+
             //</editor-fold>
 
 
 
         }
-        else {
+        else if (user.isLogin() && user.getUser().getUserRule().equals(RulesUser.USER)){
+            userMenu.add(userBought);
+            userBought.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    ListOfBoughtProductController  list = new ListOfBoughtProductController();
+                    setPanel(list.getPanel());
+                }
+            });
+            fileBoughtProduct.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+
+        }
+        else if (!user.isLogin()){
             //<editor-fold defaultstate="collapsed" desc="user items">
             //add user item
             userMenu.add(userLoginItem);
             userMenu.add(userRegisterItem);
             //</editor-fold>
-
             //<editor-fold defaultstate="collapsed" desc="User actions">
             userLoginItem.addActionListener(new ActionListener() {
                 @Override
@@ -239,7 +321,13 @@ public class CoreMiddleWare {
             });
 
             //</editor-fold>
+
         }
+
+
+
+
+
         menuBar.add(userMenu);
 
         //help

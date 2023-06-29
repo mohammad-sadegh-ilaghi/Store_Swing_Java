@@ -21,6 +21,7 @@ public class UserBehavior implements Serializable{
     public static UserBehavior singelton() throws IOException {
         if (instance == null)
             instance = new UserBehavior();
+
         return instance;
     }
     private UserBehavior() throws IOException {
@@ -30,17 +31,21 @@ public class UserBehavior implements Serializable{
             logger.fatal("file can not read and create");
         }
 
+
     }
     public boolean create(UserEntity user)  {
-        users.add(user);
         try {
-            if (write("user created account: ", user) && !checkDouplicateUser(user)){
-                UserConfigure userConfigure = UserConfigure.singlton();
-                userConfigure.login(user);
-                return true;
+            if (!(checkDouplicateUser(user))){
+                users.add(user);
+                if (write("user created account: ", user)){
+                    UserConfigure userConfigure = UserConfigure.singlton();
+                    userConfigure.login(user);
+                    return true;
+                }
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+
+        } catch (Exception e) {
+            logger.fatal(e.getMessage());
         }
         users.removeIf(item -> item.getUserName() == user.getUserName() && item.getEmail() == user.getEmail());
         return false;
@@ -73,7 +78,7 @@ public class UserBehavior implements Serializable{
     public boolean login(UserEntity user){
         logger.info("user with username :" + user.getUserName() + "try to login");
         if (users.stream().filter(item ->item.getHashPassword().equals(user.getHashPassword()) &&
-                (item.getUserName().equals(user.getUserName()))).count() >0){
+                (item.getUserName().trim().equals(user.getUserName().trim()))).count() >0){
             UserConfigure userConfigure = UserConfigure.singlton();
             userConfigure.login(users.stream().filter(item ->item.getHashPassword().equals(user.getHashPassword()) &&
                     (item.getUserName().equals(user.getUserName()))).toList().get(0));

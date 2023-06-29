@@ -1,5 +1,7 @@
 package org.example.Models.Entities;
 
+import org.example.Views.CoolSystem.CoolSystemCreateView;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
@@ -10,16 +12,18 @@ public class WaterCoolerEntity extends CoolSystemEntity implements Serializable 
     private  String maximumWindPower;
     private String PumpPower;
     private String comsumptionWaterPeerHours;
-    private String remoteController;
-    private String airConditionerFacilities;
-    private String inverter;
-    private String eERCoolingEfficiency;
-    private String cOPHeatingEfficiency;
-    private int numberOfPanels;
-    private String type;
-    private String internalPanelMaterial;
+    private boolean remoteController;
 
-    public WaterCoolerEntity(String photo, String brand, LocalDate dateOfCreated, String made, int numbers, String power, boolean isNew, LocalDate warranty, String energyLabel, String weight, String bodyMaterial, String dimention, String maximumWindPower, String pumpPower, String comsumptionWaterPeerHours, String remoteController, String airConditionerFacilities, String inverter, String eERCoolingEfficiency, String cOPHeatingEfficiency, int numberOfPanels, String type, String internalPanelMaterial) {
+    public WaterCoolerEntity(CoolSystemEntity coolSystem,  String bodyMaterial, String dimention, String maximumWindPower, String pumpPower, String comsumptionWaterPeerHours, boolean remoteController){
+        super(coolSystem);
+        this.bodyMaterial = bodyMaterial;
+        this.dimention = dimention;
+        this.maximumWindPower = maximumWindPower;
+        PumpPower = pumpPower;
+        this.comsumptionWaterPeerHours = comsumptionWaterPeerHours;
+        this.remoteController = remoteController;
+    }
+    public WaterCoolerEntity(String brand, LocalDate dateOfCreated, String made, int numbers, String power, boolean isNew, LocalDate warranty, String energyLabel, String weight, String bodyMaterial, String dimention, String maximumWindPower, String pumpPower, String comsumptionWaterPeerHours, boolean remoteController) {
         super(brand, dateOfCreated, made, numbers, power, isNew, warranty, energyLabel, weight);
         this.bodyMaterial = bodyMaterial;
         this.dimention = dimention;
@@ -27,13 +31,6 @@ public class WaterCoolerEntity extends CoolSystemEntity implements Serializable 
         PumpPower = pumpPower;
         this.comsumptionWaterPeerHours = comsumptionWaterPeerHours;
         this.remoteController = remoteController;
-        this.airConditionerFacilities = airConditionerFacilities;
-        this.inverter = inverter;
-        this.eERCoolingEfficiency = eERCoolingEfficiency;
-        this.cOPHeatingEfficiency = cOPHeatingEfficiency;
-        this.numberOfPanels = numberOfPanels;
-        this.type = type;
-        this.internalPanelMaterial = internalPanelMaterial;
     }
 
     public String getBodyMaterial() {
@@ -76,68 +73,12 @@ public class WaterCoolerEntity extends CoolSystemEntity implements Serializable 
         this.comsumptionWaterPeerHours = comsumptionWaterPeerHours;
     }
 
-    public String getRemoteController() {
+    public boolean getRemoteController() {
         return remoteController;
     }
 
-    public void setRemoteController(String remoteController) {
+    public void setRemoteController(boolean remoteController) {
         this.remoteController = remoteController;
-    }
-
-    public String getAirConditionerFacilities() {
-        return airConditionerFacilities;
-    }
-
-    public void setAirConditionerFacilities(String airConditionerFacilities) {
-        this.airConditionerFacilities = airConditionerFacilities;
-    }
-
-    public String getInverter() {
-        return inverter;
-    }
-
-    public void setInverter(String inverter) {
-        this.inverter = inverter;
-    }
-
-    public String geteERCoolingEfficiency() {
-        return eERCoolingEfficiency;
-    }
-
-    public void seteERCoolingEfficiency(String eERCoolingEfficiency) {
-        this.eERCoolingEfficiency = eERCoolingEfficiency;
-    }
-
-    public String getcOPHeatingEfficiency() {
-        return cOPHeatingEfficiency;
-    }
-
-    public void setcOPHeatingEfficiency(String cOPHeatingEfficiency) {
-        this.cOPHeatingEfficiency = cOPHeatingEfficiency;
-    }
-
-    public int getNumberOfPanels() {
-        return numberOfPanels;
-    }
-
-    public void setNumberOfPanels(int numberOfPanels) {
-        this.numberOfPanels = numberOfPanels;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getInternalPanelMaterial() {
-        return internalPanelMaterial;
-    }
-
-    public void setInternalPanelMaterial(String internalPanelMaterial) {
-        this.internalPanelMaterial = internalPanelMaterial;
     }
 
     @Override
@@ -149,13 +90,6 @@ public class WaterCoolerEntity extends CoolSystemEntity implements Serializable 
                 ", PumpPower='" + PumpPower + '\'' +
                 ", comsumptionWaterPeerHours='" + comsumptionWaterPeerHours + '\'' +
                 ", remoteController='" + remoteController + '\'' +
-                ", airConditionerFacilities='" + airConditionerFacilities + '\'' +
-                ", inverter='" + inverter + '\'' +
-                ", eERCoolingEfficiency='" + eERCoolingEfficiency + '\'' +
-                ", cOPHeatingEfficiency='" + cOPHeatingEfficiency + '\'' +
-                ", numberOfPanels=" + numberOfPanels +
-                ", type='" + type + '\'' +
-                ", internalPanelMaterial='" + internalPanelMaterial + '\'' +
                 '}';
     }
 }

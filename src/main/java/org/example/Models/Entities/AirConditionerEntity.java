@@ -11,8 +11,8 @@ public class AirConditionerEntity extends CoolSystemEntity implements Serializab
     private String heatingCapacityBTUh;
     private String threeRowCoil;
 
-    public AirConditionerEntity(String brand, LocalDate dateOfCreated, String made, int numbers, String power, boolean isNew, LocalDate warranty, String energyLabel, String weight, String theOutputIsTwoWay, String coolingCapacityBTUh, String coolingCapacityKw, String heatingCapacityBTUh, String threeRowCoil) {
-        super(brand, dateOfCreated, made, numbers, power, isNew, warranty, energyLabel, weight);
+    public AirConditionerEntity(CoolSystemEntity coolSystem, String theOutputIsTwoWay, String coolingCapacityBTUh, String coolingCapacityKw, String heatingCapacityBTUh, String threeRowCoil) {
+        super(coolSystem);
 
         this.theOutputIsTwoWay = theOutputIsTwoWay;
         this.coolingCapacityBTUh = coolingCapacityBTUh;

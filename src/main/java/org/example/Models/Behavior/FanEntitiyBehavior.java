@@ -8,6 +8,7 @@ import org.example.Models.Entities.FanEntity;
 import org.example.Models.Entities.UserEntity;
 
 import java.io.*;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -33,7 +34,9 @@ public class FanEntitiyBehavior implements CoolSystemBehavior {
     public ArrayList<FanEntity> getFans() {
         return fans;
     }
-
+    public FanEntity getFan(BigInteger id){
+        return fans.stream().filter(item -> item.getId().equals(id)).toList().get(0);
+    }
 
     @Override
     public boolean buy(CoolSystemEntity coolSystem) throws IOException {
@@ -64,15 +67,25 @@ public class FanEntitiyBehavior implements CoolSystemBehavior {
     @Override
     public boolean edit(CoolSystemEntity coolSystem) throws IOException {
         FanEntity fan = (FanEntity) coolSystem;
-        FanEntity mainFan = fans.stream().filter(item -> item.getId() == item.getId()).collect(Collectors.toList()).get(0);
-        mainFan = fan;
-        boolean result = write("add fan :", fan);
-        if (!result)
-            return false;
-        return true;
+        fans.removeIf(item -> item.getId().equals(coolSystem.getId()));
+        create(fan);
+        return write("add fan :", fan);
+    }
+    public boolean remove(BigInteger id){
+        FanEntity fan = fans.stream().filter(item -> item.getId().equals(id)).toList().get(0);
+        boolean result = fans.removeIf(item->item.getId().equals(id));
+        if (result) {
+            try {
+                result = write("fans deleted", fan);
+            } catch (IOException e) {
+                logger.fatal(e.getMessage());
+            }
+        }
+        else
+            fans.add(fan);
+        return result;
     }
 
-    @Override
     public boolean remove(CoolSystemEntity coolSystem) throws IOException {
         FanEntity fan = fans.stream().filter(item -> item.getId() == item.getId()).toList().get(0);
         if (fan == null)

@@ -37,6 +37,7 @@ public class CreateEditAirConditionerController implements CoreController {
     }
     public void edit(){
         AirConditionerEntity airConditioner = ValidateAirConditioner.getFields(view);
+        System.out.println("editController: "+airConditioner.getId());
         boolean result = ValidateAirConditioner.validatAirConditioner(airConditioner, view);
         if (result){
             model.edit(airConditioner);

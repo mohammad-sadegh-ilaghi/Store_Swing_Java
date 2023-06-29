@@ -10,9 +10,9 @@ public class FanEntity extends CoolSystemEntity implements Serializable {
     private boolean haveremoteController;
     private String dimension;
     private String windVolume;
-    private String lengthOfCable;
+    private int lengthOfCable;
 
-    public FanEntity(String photo, String brand, LocalDate dateOfCreated, String made, int numbers, String power, boolean isNew, LocalDate warranty, String energyLabel, String weight, int length, String type, boolean haveremoteController, String dimension, String windVolume, String lengthOfCable) {
+    public FanEntity(String brand, LocalDate dateOfCreated, String made, int numbers, String power, boolean isNew, LocalDate warranty, String energyLabel, String weight, int length, String type, boolean haveremoteController, String dimension, String windVolume, int lengthOfCable) {
         super(brand, dateOfCreated, made, numbers, power, isNew, warranty, energyLabel, weight);
         this.length = length;
         this.type = type;
@@ -62,11 +62,11 @@ public class FanEntity extends CoolSystemEntity implements Serializable {
         this.windVolume = windVolume;
     }
 
-    public String getLengthOfCable() {
+    public int getLengthOfCable() {
         return lengthOfCable;
     }
 
-    public void setLengthOfCable(String lengthOfCable) {
+    public void setLengthOfCable(int lengthOfCable) {
         this.lengthOfCable = lengthOfCable;
     }
 
@@ -81,4 +81,5 @@ public class FanEntity extends CoolSystemEntity implements Serializable {
                 ", lengthOfCable='" + lengthOfCable + '\'' +
                 '}';
     }
+
 }

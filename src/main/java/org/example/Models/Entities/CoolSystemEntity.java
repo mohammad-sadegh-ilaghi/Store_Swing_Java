@@ -1,11 +1,13 @@
 package org.example.Models.Entities;
 
+import org.example.Views.CoolSystem.CoolSystemCreateView;
+
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.time.LocalDate;
 import java.util.UUID;
 
-public abstract class CoolSystemEntity implements Serializable {
+public class CoolSystemEntity implements Serializable {
     private String brand;
     private BigInteger id;
 
@@ -32,6 +34,21 @@ public abstract class CoolSystemEntity implements Serializable {
 // Generate a unique integer value
         id = new BigInteger(String.format("%010d",new BigInteger(UUID.randomUUID().toString().replace("-",""),16)));
     }
+
+    public CoolSystemEntity(CoolSystemEntity coolSystem) {
+        this.brand = coolSystem.getBrand();
+        this.dateOfCreated = coolSystem.dateOfCreated;
+        this.made = coolSystem.getMade();
+        this.numbers = coolSystem.getNumbers();
+        this.power = coolSystem.getPower();
+        this.isNew = coolSystem.isNew();
+        this.warranty = coolSystem.getWarranty();
+        EnergyLabel = coolSystem.getEnergyLabel();
+        this.weight = coolSystem.getWeight();
+// Generate a unique integer value
+        id = new BigInteger(String.format("%010d",new BigInteger(UUID.randomUUID().toString().replace("-",""),16)));
+    }
+
 
     public BigInteger getId() {
         return id;

@@ -1,6 +1,8 @@
 package org.example.Views.UserViews;
 
 import org.example.Models.Entities.UserEntity;
+import org.example.Models.Enumes.EnergyLables;
+import org.example.Rules.RulesUser;
 
 import javax.swing.*;
 import java.awt.*;
@@ -38,6 +40,9 @@ public class RegisterEditView {
     JLabel inventoryLabel = new JLabel("Inventory");
     JLabel inventoryValidate = new JLabel();
 
+    JComboBox<String> rules;
+    JLabel rulesLabel = new JLabel("Rule");
+
     JLabel cardBankTitle = new JLabel("Card  bank");
 
     JButton registerButton = new JButton("submit");
@@ -46,7 +51,12 @@ public class RegisterEditView {
         panel.setSize(new Dimension(500, 700));
         panel.setMaximumSize(new Dimension(200, 200));
 
-
+        RulesUser[] energiesLabel = RulesUser.values();
+        String[] StringEnergyLabels = new String[energiesLabel.length];
+        for (int i = 0; i < energiesLabel.length; i++) {
+            StringEnergyLabels[i] = energiesLabel[i].getStringValue();
+        }
+        rules = new JComboBox<>(StringEnergyLabels);
 
         JPanel formPanel = new JPanel(new GridLayout(11 ,2));
         formPanel.add(usernameLabel);
@@ -92,6 +102,9 @@ public class RegisterEditView {
         formPanel.add(inventoryValidate);
         inventoryValidate.setForeground(Color.RED);
 
+        formPanel.add(rulesLabel);
+        formPanel.add(rules);
+
 
         panel.add(formPanel, BorderLayout.CENTER);
         panel.add(registerButton, BorderLayout.SOUTH);
@@ -107,11 +120,19 @@ public class RegisterEditView {
         bankName.setText(user.getCardBank().getBank());
         inventoryLabel.setText(Integer.toString(user.getCardBank().getInventory()) + "$ is and to Increase: ");
         inventory.setText("0");
-
+        rules.setSelectedItem(user.getUserRule());
     }
     public JPanel getPanel(){
         System.out.println(panel);
         return panel;
+    }
+
+    public JComboBox<String> getRules() {
+        return rules;
+    }
+
+    public void setRules(JComboBox<String> rules) {
+        this.rules = rules;
     }
 
     public void setRegisterButton(ActionListener action)
@@ -210,5 +231,6 @@ public class RegisterEditView {
         idCardValidate.setText("");
         bankNameValidate.setText("");
         inventoryValidate.setText("");
+        rules.setSelectedItem("");
     }
 }

@@ -37,15 +37,17 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
 
     @Override
     public boolean buy(CoolSystemEntity coolSystem) throws IOException {
+        coolSystem.setNumbers(coolSystem.getNumbers() - 1);
+        AirConditionerEntity airConditioner = (AirConditionerEntity) coolSystem;
 
-        AirConditionerEntity airConditionerEntity = airConditioneres.stream().filter(item -> item.getId() == coolSystem.getId()).toList().get(0);
-        airConditionerEntity.setNumbers(airConditionerEntity.getNumbers() - 1);
-        boolean result = writeData("airConditioneres is write new data",airConditionerEntity);
+        boolean result = writeData("airConditioneres is write new data",airConditioner);
         if (!result){
-            airConditionerEntity.setNumbers(airConditionerEntity.getNumbers() + 1);
+            airConditioner.setNumbers(airConditioner.getNumbers() + 1);
             return false;
         }
         return true;
+
+
     }
 
     @Override
@@ -69,7 +71,6 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
     }
 
 
-    @Override
     public boolean remove(CoolSystemEntity coolSystem) {
         AirConditionerEntity entity = airConditioneres.stream().filter(item -> coolSystem.getId() == item.getId()).toList().get(0);
         airConditioneres.removeIf(item -> coolSystem.getId().equals(item.getId()));
@@ -79,6 +80,18 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
             return false;
         }
         return true;
+    }
+    public AirConditionerEntity getAirConditioner(BigInteger id){
+        return airConditioneres.stream().filter(item -> item.getId().equals(id)).toList().get(0);
+    }
+    public boolean remove(BigInteger id){
+        AirConditionerEntity airConditioner = airConditioneres.stream().filter(item ->item.getId().equals(id)).toList().get(0);
+        boolean result = airConditioneres.removeIf(item -> item.getId().equals(id));
+        if (result)
+            result = writeData("user deleted :", airConditioner);
+        else
+            airConditioneres.add(airConditioner);
+        return  result;
     }
     private boolean writeData(String log, AirConditionerEntity airConditionerEntity){
         try(FileOutputStream airConditionerFile = new FileOutputStream(filePath)){
@@ -102,17 +115,7 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
         }
         return true;
     }
-    public AirConditionerEntity getAirConditioner(BigInteger id){
-        return airConditioneres.stream().filter(item -> item.getId().equals(id)).toList().get(0);
-    }
-    public boolean remove(BigInteger id){
 
-        AirConditionerEntity airConditioner = airConditioneres.stream().filter(item ->item.getId().equals(id)).toList().get(0);
-        boolean result = airConditioneres.removeIf(item -> item.getId().equals(id));
-        if (result)
-            result = writeData("user deleted :", airConditioner);
-        return  result;
-    }
     private ArrayList<AirConditionerEntity> readAirConditionFromFile() throws IOException {
         try(FileInputStream airConditionerFile = new FileInputStream(filePath)){
             ObjectInputStream in = new ObjectInputStream(airConditionerFile);

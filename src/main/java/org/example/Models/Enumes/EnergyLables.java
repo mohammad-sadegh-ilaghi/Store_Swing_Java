@@ -2,7 +2,7 @@ package org.example.Models.Enumes;
 
 public enum EnergyLables {
     A("A"),
-    APLUS("A"),
+    APLUS("A+"),
     B("B"),
     C("C"),
     D("D"),

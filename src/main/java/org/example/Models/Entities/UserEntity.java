@@ -1,5 +1,7 @@
 package org.example.Models.Entities;
 
+import org.example.Rules.RulesUser;
+
 import java.io.Serializable;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -7,6 +9,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 
 public class UserEntity implements Serializable {
+    private RulesUser user;
     private String userName;
     private String numberPhone;
     private String password;
@@ -16,7 +19,8 @@ public class UserEntity implements Serializable {
     private CardEntity cardBank;
 
 
-    public UserEntity(String userName, String numberPhone, String password, String email, CardEntity cardBank) throws NoSuchAlgorithmException {
+    public UserEntity(String userName, String numberPhone, String password, String email, CardEntity cardBank, RulesUser user) throws NoSuchAlgorithmException {
+        this.user = user;
         this.cardBank = cardBank;
         this.userName = userName;
         this.numberPhone = numberPhone;
@@ -103,6 +107,9 @@ public class UserEntity implements Serializable {
         return lastModified;
     }
 
+    public RulesUser getUserRule() {
+        return user;
+    }
 
     @Override
     public String toString() {

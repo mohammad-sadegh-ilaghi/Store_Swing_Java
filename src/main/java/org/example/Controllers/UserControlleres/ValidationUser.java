@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.Models.Entities.CardEntity;
 import org.example.Models.Entities.UserEntity;
+import org.example.Rules.RulesUser;
 import org.example.Views.UserViews.RegisterEditView;
 
 import java.security.NoSuchAlgorithmException;
@@ -17,6 +18,7 @@ public class ValidationUser {
         String email = view.getEmail().getText();
         String password = view.getPassword().getText();
         String phoneNumber = view.getPhoneNumber().getText();
+        RulesUser ruleUser = RulesUser.valueOf(view.getRules().getSelectedItem().toString());
         int idCard = 0;
         try {
             idCard = Integer.parseInt(view.getIdCard().getText());
@@ -35,7 +37,7 @@ public class ValidationUser {
         CardEntity card = new CardEntity(idCard, bankName, inentory);
         UserEntity user = null;
         try {
-            user = new UserEntity(username, phoneNumber, password, email, card);
+            user = new UserEntity(username, phoneNumber, password, email, card, ruleUser);
         } catch (NoSuchAlgorithmException e) {
             logger.fatal("can not hasing code for user :" + user);
             view.setPasswordValidate("Have some problem try again");

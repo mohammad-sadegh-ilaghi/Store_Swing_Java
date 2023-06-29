@@ -24,4 +24,8 @@ public class UserConfigure {
             instance = new UserConfigure();
         return instance;
     }
+    public boolean logOut(){
+        user = null;
+        return true;
+    }
 }
