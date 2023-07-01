@@ -49,7 +49,13 @@ public class FanEntitiyBehavior implements CoolSystemBehavior {
         }
         return true;
     }
+    public String getFilePath() {
+        return filePath;
+    }
 
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
     @Override
     public boolean create(CoolSystemEntity coolSystem) throws IOException {
         FanEntity fan = (FanEntity) coolSystem;

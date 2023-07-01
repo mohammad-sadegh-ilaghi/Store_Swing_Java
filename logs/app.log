@@ -2459,3 +2459,7 @@
 2023-06-29 22:40:08.267 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
 2023-06-29 22:40:12.773 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
 2023-06-29 22:40:18.090 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded
+2023-06-29 22:43:59.327 [main] INFO  org.example.Models.Behavior.UserBehavior - user file readed 
+2023-06-29 22:44:06.436 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.UserBehavior - user with username :htry to login
+2023-06-29 22:44:10.434 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.WaterCoolerBehavior - file waterCooler readed
+2023-06-29 22:44:12.462 [AWT-EventQueue-0] INFO  org.example.Models.Behavior.FanEntitiyBehavior - fans from file loaded

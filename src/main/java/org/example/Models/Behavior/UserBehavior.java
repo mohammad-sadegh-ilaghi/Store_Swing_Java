@@ -30,8 +30,13 @@ public class UserBehavior implements Serializable{
             users = new ArrayList<>();
             logger.fatal("file can not read and create");
         }
+    }
+    public String getFilePath() {
+        return filePath;
+    }
 
-
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
     }
     public boolean create(UserEntity user)  {
         try {

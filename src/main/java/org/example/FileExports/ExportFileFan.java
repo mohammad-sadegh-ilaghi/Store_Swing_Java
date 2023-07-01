@@ -1,5 +1,7 @@
 package org.example.FileExports;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.example.Models.Behavior.FanEntitiyBehavior;
 import org.example.Models.Behavior.ProductBoughtBehavior;
 import org.example.Models.Entities.FanEntity;
@@ -13,10 +15,12 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class ExportFileFan {
+    private static final Logger logger = LogManager.getLogger(ExportFileFan.class);
     public static void exportWithoutFileChooser(String path){
         Random random = new Random();
         Path path1 = Paths.get(path, Integer.toString(random.nextInt(10000)) + "_Fans.txt");
         File file = new File(path1.toString());
+        logger.info("Export file " + path1);
         try {
             file.createNewFile();
         } catch (IOException e) {

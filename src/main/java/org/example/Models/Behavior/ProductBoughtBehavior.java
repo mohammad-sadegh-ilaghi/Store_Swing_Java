@@ -21,6 +21,13 @@ public class ProductBoughtBehavior {
             coolSystemes = new ArrayList<>();
 
     }
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
     public static ProductBoughtBehavior singleton(){
         if (instance == null)
             instance = new ProductBoughtBehavior();

@@ -29,6 +29,13 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
             logger.fatal("file can not read and create");
         }
     }
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
     @Override
     public boolean buy(CoolSystemEntity coolSystem) {
         for (WaterCoolerEntity item : watercooleres){

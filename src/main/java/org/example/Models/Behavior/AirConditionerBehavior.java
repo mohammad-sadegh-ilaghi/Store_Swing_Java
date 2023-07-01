@@ -14,12 +14,21 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
     private String filePath ="src/main/java/org/example/Models/Files/airConditioner.ser";
     private static AirConditionerBehavior instance;
     private ArrayList<AirConditionerEntity> airConditioneres;
+
     private static final Logger logger = LogManager.getLogger(AirConditionerBehavior.class);
 
     public static AirConditionerBehavior singelton() throws IOException {
         if (instance ==null)
             instance = new AirConditionerBehavior();
         return instance;
+    }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
     }
 
     private AirConditionerBehavior() throws IOException {

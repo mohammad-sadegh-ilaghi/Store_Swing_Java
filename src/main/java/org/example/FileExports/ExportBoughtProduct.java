@@ -1,5 +1,7 @@
 package org.example.FileExports;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.example.Models.Behavior.AirConditionerBehavior;
 import org.example.Models.Behavior.ProductBoughtBehavior;
 import org.example.Models.Entities.AirConditionerEntity;
@@ -13,11 +15,15 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class ExportBoughtProduct {
+    private static final Logger logger = LogManager.getLogger(ExportBoughtProduct.class);
+
     public static void exportWithoutFileChooser(String path){
 
         Random random = new Random();
         Path path1 = Paths.get(path, Integer.toString(random.nextInt(10000)) + "_BoughtProduct.txt");
+
         File file = new File(path1.toString());
+        logger.info("export file" + path1);
         try {
             if (!file.exists())
                 file.createNewFile();
