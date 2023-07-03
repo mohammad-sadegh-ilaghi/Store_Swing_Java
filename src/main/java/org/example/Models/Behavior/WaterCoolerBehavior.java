@@ -10,6 +10,7 @@ import org.example.Models.Entities.WaterCoolerEntity;
 import java.io.*;
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class WaterCoolerBehavior implements CoolSystemBehavior {
     private  String filePath = "src/main/java/org/example/Models/Files/waterCooler.ser";
@@ -37,10 +38,14 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
         this.filePath = filePath;
     }
     @Override
-    public boolean buy(CoolSystemEntity coolSystem) {
+    public boolean buy(CoolSystemEntity coolSystem, int number) {
         for (WaterCoolerEntity item : watercooleres){
             if (item.getId().equals(coolSystem.getId())){
-                item.setNumbers(item.getNumbers() - 1);
+                if (coolSystem.getNumbers() - number >= 0 )
+                    coolSystem.setNumbers(coolSystem.getNumbers() - number);
+                else
+                    return false;
+                WaterCoolerEntity entity = (WaterCoolerEntity) coolSystem;
                 try {
                     write("buy one product", (WaterCoolerEntity) coolSystem);
                 } catch (IOException e) {
@@ -57,6 +62,12 @@ public class WaterCoolerBehavior implements CoolSystemBehavior {
     }
     public WaterCoolerEntity getWatercooler(BigInteger id) {
         return watercooleres.stream().filter(item -> item.getId().equals(id)).toList().get(0);
+    }
+    public ArrayList<WaterCoolerEntity> getFans(String waterCooler){
+        logger.info("getAirConditioneres method search");
+        return watercooleres.stream().filter(item -> item.getId().toString().startsWith(waterCooler) ||
+                        item.getBrand().trim().toUpperCase().contains(waterCooler.trim().toUpperCase()))
+                .collect(Collectors.toCollection(ArrayList::new));
     }
 
     @Override

@@ -19,14 +19,5 @@ public class FileManagement {
         return "";
     }
 
-//        public static File getFile(){
-//            JFileChooser fileChooser = new JFileChooser();
-//            int result = fileChooser.showSaveDialog(null);
-//            if (result == JFileChooser.APPROVE_OPTION) {
-//                File file = fileChooser.getSelectedFile();
-//                return file;
-//            }
-//            return null;
-//        }
 
 }

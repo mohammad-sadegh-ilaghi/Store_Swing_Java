@@ -18,7 +18,7 @@ public class ValidateWaterCooler {
         String comsumptionWaterPeerHours = view.getComsumptionWaterPeerHours().getText();
         boolean remoteController = view.getRemoteController().isSelected();
         WaterCoolerEntity waterCooler = new WaterCoolerEntity(CoolSystemValidate.getFields(view), bodyMaterial, dimention, maximumWindPower, PumpPower, comsumptionWaterPeerHours, remoteController);
-        if (!view.getId().toString().equals(""))
+        if (!view.getId().getText().trim().equals(""))
             waterCooler.setId(new BigInteger(view.getId().getText()));
         return waterCooler;
     }

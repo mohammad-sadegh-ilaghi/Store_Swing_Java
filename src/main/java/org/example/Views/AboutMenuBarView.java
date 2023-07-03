@@ -9,6 +9,4 @@ public abstract class AboutMenuBarView {
     public static void getPanel(){
         JOptionPane.showMessageDialog(null, "this progarm is for store of cool system.", "about",JOptionPane.INFORMATION_MESSAGE);
     }
-    public static void main(String[] args){
-    }
 }

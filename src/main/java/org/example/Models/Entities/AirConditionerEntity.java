@@ -1,7 +1,10 @@
 package org.example.Models.Entities;
 
 import java.io.Serializable;
+import java.lang.reflect.Field;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 
 public class AirConditionerEntity extends CoolSystemEntity implements Serializable {
@@ -79,5 +82,21 @@ public class AirConditionerEntity extends CoolSystemEntity implements Serializab
                 ", ThreeRowCoil='" + threeRowCoil + '\'' +
                 super.toString() +
                 "} \n";
+    }
+    public String toStringFIle(){
+        return   super.toStringFile() + '\t' +theOutputIsTwoWay + '\t' +
+                 coolingCapacityBTUh + '\t' +
+                 coolingCapacityKw + '\t' +
+                 heatingCapacityBTUh + '\t' +
+                 threeRowCoil + '\t' +
+                 super.toString();
+    }
+
+    public static String[] getFeilds() {
+        Field[] fields = FieldsEntity.getAllFields(AirConditionerEntity.class);
+        return Arrays.stream(fields)
+                .map(Field::getName)
+                .map(item -> item.replaceAll("(\\p{Lower})(\\p{Upper})", "$1 $2"))
+                .toArray(String[]::new);
     }
 }

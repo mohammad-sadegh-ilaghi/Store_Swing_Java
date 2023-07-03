@@ -4,6 +4,7 @@ import org.example.Configure.UserConfigure;
 import org.example.Models.Entities.FanEntity;
 import org.example.Models.Entities.WaterCoolerEntity;
 import org.example.Rules.RulesUser;
+import org.example.Views.Components.SearchComponent;
 import org.example.Views.FanViews.ListFanTableModel;
 
 import javax.swing.*;
@@ -13,6 +14,8 @@ import java.util.ArrayList;
 
 public class ListWaterCoolView {
     JPanel panel;
+    public SearchComponent searchComponent;
+
     WaterCoolerTableModel fanTableModel = null;
     ArrayList<WaterCoolerEntity> waterCooleres = null;
     JButton edit = new JButton("Edit");
@@ -21,8 +24,11 @@ public class ListWaterCoolView {
 
     JTable table;
     public ListWaterCoolView(ArrayList<WaterCoolerEntity> waterCooleres){
+        searchComponent = new SearchComponent();
         panel = new JPanel(new BorderLayout());
         this.waterCooleres = waterCooleres;
+        panel.add(searchComponent.getPanel(), BorderLayout.NORTH);
+
         fanTableModel = new WaterCoolerTableModel(this.waterCooleres);
         table = new JTable(fanTableModel);
         JScrollPane scrollPane = new JScrollPane(table);
@@ -37,6 +43,15 @@ public class ListWaterCoolView {
             panel.add(buy, BorderLayout.SOUTH);
         }
     }
+
+    public ArrayList<WaterCoolerEntity> getWaterCooleres() {
+        return waterCooleres;
+    }
+
+    public void setWaterCooleres(ArrayList<WaterCoolerEntity> waterCooleres) {
+        this.waterCooleres = waterCooleres;
+    }
+
     public void setBuyActionListener(ActionListener actionListener){
         buy.addActionListener(actionListener);
     }
@@ -54,8 +69,13 @@ public class ListWaterCoolView {
 
     public void setPanel(JPanel panel) {
         this.panel = panel;
+        this.panel.revalidate();
+        this.panel.revalidate();
     }
-
+    public void repaint(){
+        panel.revalidate();
+        panel.repaint();
+    }
     public JTable getTable() {
         return table;
     }

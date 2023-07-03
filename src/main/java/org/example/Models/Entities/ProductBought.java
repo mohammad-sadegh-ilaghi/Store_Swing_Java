@@ -1,6 +1,8 @@
 package org.example.Models.Entities;
 
 import java.io.Serializable;
+import java.lang.reflect.Field;
+import java.util.Arrays;
 
 public class    ProductBought implements Serializable {
     private UserEntity user;
@@ -51,4 +53,16 @@ public class    ProductBought implements Serializable {
                 ", numbers = " + numbers +
                 "} \n";
     }
+    public String toStringFile() {
+        return user.toStringFile() + coolSystem.toStringFile() +
+                "\t" + numbers;
+    }
+    public static String[] getFeilds() {
+        Field[] fields = FieldsEntity.getAllFields(ProductBought.class);
+        return Arrays.stream(fields)
+                .map(Field::getName)
+                .map(item -> item.replaceAll("(\\p{Lower})(\\p{Upper})", "$1 $2"))
+                .toArray(String[]::new);
+    }
+
 }

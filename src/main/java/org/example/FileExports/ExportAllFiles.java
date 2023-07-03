@@ -15,6 +15,8 @@ public class ExportAllFiles {
     public static void export(){
         logger.info("export all files");
         String path = FileManagement.getPath();
+        if (path.equals(""))
+            return;
         ExportFileFan.exportWithoutFileChooser(path);
         ExportFileAirCondition.exportWithoutFileChooser(path);
         ExportFileWaterCooler.exportWithoutFileChooser(path);

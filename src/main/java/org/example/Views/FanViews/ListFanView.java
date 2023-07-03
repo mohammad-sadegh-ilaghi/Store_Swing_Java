@@ -5,6 +5,7 @@ import org.example.Models.Entities.AirConditionerEntity;
 import org.example.Models.Entities.FanEntity;
 import org.example.Rules.RulesUser;
 import org.example.Views.AirConditionerViews.AirConditionerTableModel;
+import org.example.Views.Components.SearchComponent;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,6 +14,8 @@ import java.util.ArrayList;
 
 public class ListFanView {
     JPanel panel;
+    public SearchComponent searchComponent = new SearchComponent();
+
     ListFanTableModel fanTableModel = null;
     ArrayList<FanEntity> fans = null;
     JButton edit = new JButton("Edit");
@@ -37,13 +40,24 @@ public class ListFanView {
         else {
             panel.add(buy, BorderLayout.SOUTH);
         }
+        panel.add(searchComponent.getPanel(), BorderLayout.NORTH);
+    }
 
-
-
+    public ArrayList<FanEntity> getFans() {
+        return fans;
+    }
+    public void repaint(){
+        panel.revalidate();
+        panel.repaint();
+    }
+    public void setFans(ArrayList<FanEntity> fans) {
+        this.fans = fans;
     }
 
     public void setPanel(JPanel panel) {
         this.panel = panel;
+        this.panel.revalidate();
+        this.panel.repaint();
     }
 
     public void setBuyActionListerner(ActionListener actionListener){

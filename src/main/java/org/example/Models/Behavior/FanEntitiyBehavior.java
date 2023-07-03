@@ -3,6 +3,7 @@ package org.example.Models.Behavior;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.Models.Behavior.BehaviorInterfaces.CoolSystemBehavior;
+import org.example.Models.Entities.AirConditionerEntity;
 import org.example.Models.Entities.CoolSystemEntity;
 import org.example.Models.Entities.FanEntity;
 import org.example.Models.Entities.UserEntity;
@@ -34,13 +35,22 @@ public class FanEntitiyBehavior implements CoolSystemBehavior {
     public ArrayList<FanEntity> getFans() {
         return fans;
     }
+    public ArrayList<FanEntity> getFans(String fan){
+        logger.info("getAirConditioneres method search");
+        return fans.stream().filter(item -> item.getId().toString().startsWith(fan) ||
+                        item.getBrand().trim().toUpperCase().contains(fan.trim().toUpperCase()))
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
     public FanEntity getFan(BigInteger id){
         return fans.stream().filter(item -> item.getId().equals(id)).toList().get(0);
     }
 
     @Override
-    public boolean buy(CoolSystemEntity coolSystem) throws IOException {
-        coolSystem.setNumbers(coolSystem.getNumbers() - 1);
+    public boolean buy(CoolSystemEntity coolSystem, int number) throws IOException {
+        if (coolSystem.getNumbers() - number >= 0 )
+            coolSystem.setNumbers(coolSystem.getNumbers() - number);
+        else
+            return false;
         FanEntity entity = (FanEntity) coolSystem;
         boolean result = write("byuy product: ", entity);
         if (!result){

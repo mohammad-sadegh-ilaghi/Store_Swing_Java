@@ -2,12 +2,14 @@ package org.example.Models.Behavior;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.Models.Entities.AirConditionerEntity;
 import org.example.Models.Entities.CoolSystemEntity;
 import org.example.Models.Entities.FanEntity;
 import org.example.Models.Entities.ProductBought;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class ProductBoughtBehavior {
     private static final Logger logger = LogManager.getLogger(FanEntitiyBehavior.class);
@@ -24,7 +26,12 @@ public class ProductBoughtBehavior {
     public String getFilePath() {
         return filePath;
     }
-
+    public ArrayList<ProductBought> getProductBought(String productBought){
+        logger.info("getAirConditioneres method search");
+        return coolSystemes.stream().filter(item -> item.getCoolSystem().getId().toString().startsWith(productBought) ||
+                        item.getCoolSystem().getBrand().trim().toUpperCase().contains(productBought.trim().toUpperCase()))
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
     public void setFilePath(String filePath) {
         this.filePath = filePath;
     }

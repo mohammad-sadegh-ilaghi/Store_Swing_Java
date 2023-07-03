@@ -1,9 +1,6 @@
 package org.example.Views.FanViews;
 
-import org.example.Models.Entities.AirConditionerEntity;
-import org.example.Models.Entities.CoolSystemEntity;
-import org.example.Models.Entities.FanEntity;
-import org.example.Models.Entities.ProductBought;
+import org.example.Models.Entities.*;
 
 import javax.swing.table.AbstractTableModel;
 import java.lang.reflect.Field;
@@ -14,7 +11,7 @@ public class ListFanTableModel  extends AbstractTableModel {
     ArrayList<FanEntity> fans;
     private String[] columnNames;
     public ListFanTableModel(ArrayList<FanEntity> fans){
-        Field[] fields = getAllFields(FanEntity.class);
+        Field[] fields = FieldsEntity.getAllFields(FanEntity.class);
         // convert the fields to an array of field names
         columnNames = Arrays.stream(fields)
                 .map(Field::getName)
@@ -23,6 +20,7 @@ public class ListFanTableModel  extends AbstractTableModel {
 
         this.fans = fans;
     }
+
 
     @Override
     public int getRowCount() {
@@ -89,15 +87,6 @@ public class ListFanTableModel  extends AbstractTableModel {
                 break;
         }
         return value;
-    }
-    public static Field[] getAllFields(Class<?> clazz) {
-        ArrayList<Field> fields = new ArrayList<Field>();
-        Class<?> currentClass = clazz;
-        while (currentClass != null) {
-            fields.addAll(Arrays.asList(currentClass.getDeclaredFields()));
-            currentClass = currentClass.getSuperclass();
-        }
-        return fields.toArray(new Field[0]);
     }
     public String getColumnName(int columnIndex) {
         return columnNames[columnIndex];

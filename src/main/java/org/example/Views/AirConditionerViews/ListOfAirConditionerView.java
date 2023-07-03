@@ -4,6 +4,7 @@ import org.example.Configure.UserConfigure;
 import org.example.Models.Behavior.AirConditionerBehavior;
 import org.example.Models.Entities.AirConditionerEntity;
 import org.example.Rules.RulesUser;
+import org.example.Views.Components.SearchComponent;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,6 +14,8 @@ import java.util.ArrayList;
 
 public class ListOfAirConditionerView {
     JPanel panel;
+
+    public SearchComponent searchComponent = new SearchComponent();
     AirConditionerTableModel tableModel;
     ArrayList<AirConditionerEntity> airConditionerEntities = null;
     JButton edit = new JButton("Edit");
@@ -27,6 +30,7 @@ public class ListOfAirConditionerView {
         table = new JTable(tableModel);
         JScrollPane scrollPane = new JScrollPane(table);
         panel.add(scrollPane);
+        panel.add(searchComponent.getPanel(), BorderLayout.NORTH);
         JPanel buttonsPanel = new JPanel(new GridLayout(1, 2));
         if (UserConfigure.singlton().getUser().getUserRule().equals(RulesUser.ADMIN)){
             buttonsPanel.add(delete);
@@ -59,6 +63,7 @@ public class ListOfAirConditionerView {
         return panel;
     }
     public void setPanel(JPanel panel){
+      this.panel.removeAll();
       this.panel = panel;
       this.panel.revalidate();
       this.panel.repaint();
@@ -71,6 +76,10 @@ public class ListOfAirConditionerView {
 
     public void setAirConditionerEntities(ArrayList<AirConditionerEntity> airConditionerEntities) {
         this.airConditionerEntities = airConditionerEntities;
+
+    }  public void repaint(){
+        panel.revalidate();
+        panel.repaint();
     }
 
     public AirConditionerTableModel getTableModel() {

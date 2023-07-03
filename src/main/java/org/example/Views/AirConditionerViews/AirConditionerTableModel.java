@@ -1,6 +1,8 @@
 package org.example.Views.AirConditionerViews;
 
 import org.example.Models.Entities.AirConditionerEntity;
+import org.example.Models.Entities.FieldsEntity;
+
 import java.lang.reflect.Field;
 import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
@@ -10,7 +12,7 @@ public class AirConditionerTableModel extends AbstractTableModel {
     ArrayList<AirConditionerEntity> airConditionerEntities;
     private String[] columnNames;
     public AirConditionerTableModel(ArrayList<AirConditionerEntity> airConditionerEntities){
-        Field[] fields = getAllFields(AirConditionerEntity.class);
+        Field[] fields = FieldsEntity.getAllFields(AirConditionerEntity.class);
         // convert the fields to an array of field names
         columnNames = Arrays.stream(fields)
                 .map(Field::getName)
@@ -83,15 +85,7 @@ public class AirConditionerTableModel extends AbstractTableModel {
         }
         return value;
     }
-    public static Field[] getAllFields(Class<?> clazz) {
-        ArrayList<Field> fields = new ArrayList<Field>();
-        Class<?> currentClass = clazz;
-        while (currentClass != null) {
-            fields.addAll(Arrays.asList(currentClass.getDeclaredFields()));
-            currentClass = currentClass.getSuperclass();
-        }
-        return fields.toArray(new Field[0]);
-    }
+
     public String getColumnName(int columnIndex) {
         return columnNames[columnIndex];
     }

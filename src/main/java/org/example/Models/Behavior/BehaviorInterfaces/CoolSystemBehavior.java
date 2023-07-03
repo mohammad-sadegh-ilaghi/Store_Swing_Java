@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.math.BigInteger;
 
 public interface CoolSystemBehavior {
-    boolean buy(CoolSystemEntity coolSystem) throws IOException;
+    boolean buy(CoolSystemEntity coolSystem, int number) throws IOException;
     boolean create(CoolSystemEntity coolSystem) throws IOException;
     boolean edit(CoolSystemEntity coolSystem) throws IOException;
     boolean remove(BigInteger coolSystem) throws IOException;

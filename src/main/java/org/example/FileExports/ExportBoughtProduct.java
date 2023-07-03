@@ -40,12 +40,21 @@ public class ExportBoughtProduct {
     }
     public static void export(){
         String path= FileManagement.getPath();
+        if (path.equals(""))
+            return;
         exportWithoutFileChooser(path);
     }
     private static void write(ArrayList<ProductBought> productBoughts,String filePath) {
         try (PrintWriter writer = new PrintWriter(filePath)) {
+            for (String item: ProductBought.getFeilds()){
+                if (item.equals("id"))
+                    writer.print(item + "\t\t\t");
+                writer.print(item + "\t");
+            }
+            writer.println();
+            writer.println("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
             for (ProductBought pr: productBoughts) {
-                writer.println(pr);
+                writer.println(pr.toStringFile());
             }
         } catch (IOException e) {
         }

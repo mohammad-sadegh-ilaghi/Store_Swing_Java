@@ -3,9 +3,11 @@ package org.example.Models.Entities;
 import org.example.Rules.RulesUser;
 
 import java.io.Serializable;
+import java.lang.reflect.Field;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
 import java.util.Date;
 
 public class UserEntity implements Serializable {
@@ -121,5 +123,20 @@ public class UserEntity implements Serializable {
                 ", email='" + email + '\'' +
                 ", created=" + lastModified +
                 '}';
+    }
+    public String toStringFile() {
+        return userName + '\t' +
+                numberPhone + '\t' +
+                password + '\t' +
+                hashPassword + '\t' +
+                email + '\t' +
+                lastModified + + '\t';
+    }
+    public static String[] getFeilds() {
+        Field[] fields = FieldsEntity.getAllFields(UserEntity.class);
+        return Arrays.stream(fields)
+                .map(Field::getName)
+                .map(item -> item.replaceAll("(\\p{Lower})(\\p{Upper})", "$1 $2"))
+                .toArray(String[]::new);
     }
 }

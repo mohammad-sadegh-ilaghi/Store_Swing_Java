@@ -36,12 +36,23 @@ public class ExportFileFan {
     }
     public static void export(){
         String path = FileManagement.getPath();
+        if (path.equals(""))
+            return;
         exportWithoutFileChooser(path);
     }
     private static void write(ArrayList<FanEntity> fans,String filePath) {
         try (PrintWriter writer = new PrintWriter(filePath)) {
+            for (String item: FanEntity.getFeilds()){
+                if (item.equals("id"))
+                    writer.print(item + "\t\t\t");
+                writer.print(item + "\t");
+            }
+            writer.println();
+
+            writer.println("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
             for (FanEntity fan: fans) {
-                writer.println(fan);
+                writer.println(fan.toStringFile());
             }
         } catch (IOException e) {
         }

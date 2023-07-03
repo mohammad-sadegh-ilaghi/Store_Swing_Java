@@ -13,7 +13,6 @@ public class ProductBoughtModelTable extends AbstractTableModel {
     ArrayList<ProductBought> productBoughtes;
     private String[] columnNames;
     public ProductBoughtModelTable(ArrayList<ProductBought> productBoughts){
-        Field[] fields = getAllFields(FanEntity.class);
         // convert the fields to an array of field names
         columnNames = new String[]{"UserName", "Id_Product", "Numbers", "Type"};
 
@@ -42,7 +41,8 @@ public class ProductBoughtModelTable extends AbstractTableModel {
                 value = air.getCoolSystem().getId();
                 break;
             case 2:
-                value = air.getNumbers();
+                value = air.getNumbers() + 1;
+                break;
             case 3:
                 value = FactoryEntities.getType(air.getCoolSystem());
         }

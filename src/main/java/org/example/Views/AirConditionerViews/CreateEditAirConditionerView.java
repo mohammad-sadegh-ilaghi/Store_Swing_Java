@@ -48,6 +48,7 @@ public class CreateEditAirConditionerView extends CoolSystemCreateView {
         JPanel formPanel = super.getFormPanel();
         formPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
+
         //<editor-fold defaultstate="collapsed" desc="formPanel add">
 
         formPanel.add(theOutputIsTwoWayLabel);
@@ -80,8 +81,11 @@ public class CreateEditAirConditionerView extends CoolSystemCreateView {
         ThreeRowCoilValidate.setForeground(Color.RED);
         //</editor-fold>
 
+        JPanel submitPanel = new JPanel();
+        submitPanel.add(submit);
+
         panel.add(formPanel, BorderLayout.CENTER);
-        panel.add(submit, BorderLayout.SOUTH);
+        panel.add(submitPanel, BorderLayout.SOUTH);
 
     }
     public void submitActionLister(ActionListener action){

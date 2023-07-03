@@ -55,6 +55,9 @@ public class UserBehavior implements Serializable{
         users.removeIf(item -> item.getUserName() == user.getUserName() && item.getEmail() == user.getEmail());
         return false;
     }
+    public boolean removeUser(UserEntity user){
+        return users.removeIf(item -> item.getUserName().equals(user.getUserName()) || item.getEmail().equals(user.getEmail()));
+    }
     public boolean checkDouplicateUser(UserEntity user){
         return users.stream().filter(item ->
                                 item.getUserName().trim().toUpperCase().equals(user.getUserName().toUpperCase())

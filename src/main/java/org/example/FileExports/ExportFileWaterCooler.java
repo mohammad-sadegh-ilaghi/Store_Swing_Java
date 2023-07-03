@@ -40,12 +40,24 @@ public class ExportFileWaterCooler {
     }
     public static void export(){
         String path = FileManagement.getPath();
+        if (path.equals(""))
+        return;
         exportWithoutFileChooser(path);
     }
     private static void write(ArrayList<WaterCoolerEntity> waterCoolerEntities,String filePath) {
         try (PrintWriter writer = new PrintWriter(filePath)) {
+            for (String item: WaterCoolerEntity.getFeilds()){
+                if (item.equals("id"))
+                    writer.print(item + "\t\t\t");
+                else
+                    writer.print(item + "\t");
+            }
+            writer.println();
+
+            writer.println("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
             for (WaterCoolerEntity waterCooler: waterCoolerEntities) {
-                writer.println(waterCooler);
+                writer.println(waterCooler.toStringFile());
             }
         } catch (IOException e) {
         }

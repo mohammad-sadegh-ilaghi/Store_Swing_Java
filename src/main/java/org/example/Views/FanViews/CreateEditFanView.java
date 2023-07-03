@@ -2,6 +2,7 @@ package org.example.Views.FanViews;
 
 import org.example.Models.Entities.FanEntity;
 import org.example.Models.Enumes.EnergyLables;
+import org.example.Views.Components.SearchComponent;
 import org.example.Views.CoolSystem.CoolSystemCreateView;
 
 import javax.swing.*;
@@ -10,6 +11,7 @@ import java.awt.event.ActionListener;
 
 public class CreateEditFanView extends CoolSystemCreateView {
     private JPanel panel;
+    public SearchComponent searchComponent = new SearchComponent();
 
     //<editor-fold defaultstate="collapsed" desc="Form">
 
@@ -48,6 +50,7 @@ public class CreateEditFanView extends CoolSystemCreateView {
 
         JPanel formPanel = super.getFormPanel();
         formPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        panel.add(searchComponent.getPanel(), BorderLayout.NORTH);
 
         //<editor-fold defaultstate="collapsed" desc="formPanel">
 
@@ -82,8 +85,10 @@ public class CreateEditFanView extends CoolSystemCreateView {
         lengthOfCableValidate.setForeground(Color.RED);
         //</editor-fold>
 
+        JPanel submitPanel = new JPanel();
+        submitPanel.add(submit);
         panel.add(formPanel, BorderLayout.CENTER);
-        panel.add(submit, BorderLayout.SOUTH);
+        panel.add(submitPanel, BorderLayout.SOUTH);
 
     }
     public void setValuess(FanEntity fan){

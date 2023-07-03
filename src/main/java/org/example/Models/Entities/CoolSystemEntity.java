@@ -3,8 +3,10 @@ package org.example.Models.Entities;
 import org.example.Views.CoolSystem.CoolSystemCreateView;
 
 import java.io.Serializable;
+import java.lang.reflect.Field;
 import java.math.BigInteger;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.UUID;
 
 public class CoolSystemEntity implements Serializable {
@@ -144,5 +146,24 @@ public class CoolSystemEntity implements Serializable {
                 ", EnergyLabel='" + EnergyLabel + '\'' +
                 ", weight='" + weight + '\'' +
                 '}';
+    }
+    public String toStringFile(){
+        return  brand + '\t' +
+                id + "\t" +
+                dateOfCreated + + '\t' +
+                made + '\t' +
+                numbers + '\t' +
+                power + '\t' +
+                isNew + '\t' +
+                warranty + '\t' +
+                EnergyLabel + '\t' +
+                weight + '\t';
+    }
+    public static String[] getFeilds() {
+        Field[] fields = FieldsEntity.getAllFields(CoolSystemEntity.class);
+        return Arrays.stream(fields)
+                .map(Field::getName)
+                .map(item -> item.replaceAll("(\\p{Lower})(\\p{Upper})", "$1 $2"))
+                .toArray(String[]::new);
     }
 }

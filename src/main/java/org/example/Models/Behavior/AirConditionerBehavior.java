@@ -9,6 +9,8 @@ import org.example.Models.Entities.CoolSystemEntity;
 import java.io.*;
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Locale;
+import java.util.stream.Collectors;
 
 public class AirConditionerBehavior implements CoolSystemBehavior {
     private String filePath ="src/main/java/org/example/Models/Files/airConditioner.ser";
@@ -42,11 +44,19 @@ public class AirConditionerBehavior implements CoolSystemBehavior {
         logger.info("getAirConditioneres method called");
         return airConditioneres;
     }
-
+    public ArrayList<AirConditionerEntity> getAirConditioneres(String airConditioner){
+        logger.info("getAirConditioneres method search");
+        return airConditioneres.stream().filter(item -> item.getId().toString().startsWith(airConditioner.toString()) ||
+                                item.getBrand().trim().toUpperCase().contains(airConditioner.trim().toUpperCase()))
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
 
     @Override
-    public boolean buy(CoolSystemEntity coolSystem) throws IOException {
-        coolSystem.setNumbers(coolSystem.getNumbers() - 1);
+    public boolean buy(CoolSystemEntity coolSystem, int number) throws IOException {
+        if (coolSystem.getNumbers() - number >= 0 )
+            coolSystem.setNumbers(coolSystem.getNumbers() - number);
+        else
+            return false;
         AirConditionerEntity airConditioner = (AirConditionerEntity) coolSystem;
 
         boolean result = writeData("airConditioneres is write new data",airConditioner);

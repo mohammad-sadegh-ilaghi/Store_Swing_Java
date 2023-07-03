@@ -1,5 +1,6 @@
 package org.example.Controllers.AirConditionerControlleres;
 
+import org.apache.logging.log4j.core.Core;
 import org.example.Configure.UserConfigure;
 import org.example.Controllers.CoreController;
 import org.example.Models.Behavior.AirConditionerBehavior;
@@ -8,26 +9,46 @@ import org.example.Models.Entities.AirConditionerEntity;
 import org.example.Models.Entities.ProductBought;
 import org.example.Models.Entities.UserEntity;
 import org.example.Views.AirConditionerViews.ListOfAirConditionerView;
+import org.example.Views.Components.GetNumberComponent;
 import org.example.Views.CoreMiddleWare;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.math.BigInteger;
+import java.util.ArrayList;
 
 public class ListAirConditioerController implements CoreController {
     private AirConditionerBehavior model;
     private ListOfAirConditionerView view;
     public ListAirConditioerController() throws IOException {
         model= AirConditionerBehavior.singelton();
-
         view = new ListOfAirConditionerView(AirConditionerBehavior.singelton().getAirConditioneres());
+        inintial();
+    }
+    public void inintial(){
         ActionListener deleteAction = e -> delete();
         ActionListener editAction = e-> edit();
         view.setDeleteActionListerer(deleteAction);
         view.setEditActionListerer(editAction);
         ActionListener buy = e -> buy();
         view.setBuyActionListener(buy);
+
+        ActionListener search = e-> search();
+        view.searchComponent.addActionListerSearch(search);
+    }
+
+    public ListAirConditioerController(ArrayList<AirConditionerEntity> airConditionerEntities) throws IOException {
+        model= AirConditionerBehavior.singelton();
+        view = new ListOfAirConditionerView(airConditionerEntities);
+        inintial();
+    }
+    public void search(){
+        String text = view.searchComponent.getSearch().getText();
+        ArrayList<AirConditionerEntity> airConditionerEntities = model.getAirConditioneres(text);
+        repaint(airConditionerEntities);
+
     }
     public void buy(){
         UserEntity user = UserConfigure.singlton().getUser();
@@ -35,19 +56,35 @@ public class ListAirConditioerController implements CoreController {
         AirConditionerEntity airConditioner = model.getAirConditioner(id);
         if (airConditioner.getNumbers()> 0){
             try {
+                int number = 0;
+
                 ProductBought productBought = new ProductBought(user, airConditioner);
                 ProductBoughtBehavior productBoughtBehavior = ProductBoughtBehavior.singleton();
-                if (productBoughtBehavior.buy(productBought))
-                    model.buy(airConditioner);
+                if (productBoughtBehavior.buy(productBought)){
+                    number = GetNumberComponent.getNumbers();
+                    if (number == 0)
+                        return;
+                    if (model.buy(airConditioner, number))
+                        repaint();
+                    else
+                        JOptionPane.showMessageDialog(null, "this number of Product is not exist");
+                }
                 else
                     JOptionPane.showMessageDialog(null, "can not buy this product has some problem!!!");
 
-                repaint();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-        }else
-            JOptionPane.showMessageDialog(null, "Product number is zero");
+        }
+    }
+    private void repaint(ArrayList<AirConditionerEntity> airConditionerEntities){
+        try {
+            CoreMiddleWare.singelton().setPanel(new ListAirConditioerController(airConditionerEntities).view.getPanel());
+            CoreMiddleWare.singelton().repainAndReValidatePanel();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
     private void repaint(){
         try {
@@ -60,6 +97,7 @@ public class ListAirConditioerController implements CoreController {
         }
 
     }
+
     public void  delete(){
             BigInteger id = getElement();
             int outPut = JOptionPane.showOptionDialog(null, "Are you sure to Delete?", "Confirmation",
@@ -100,4 +138,5 @@ public class ListAirConditioerController implements CoreController {
     public JPanel getPanel() {
         return view.getPanel();
     }
+
 }

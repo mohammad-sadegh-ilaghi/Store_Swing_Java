@@ -68,7 +68,9 @@ public class CreateEditWaterCoolView extends CoolSystemCreateView {
         formPanel.add(remoteController);
 
         panel.add(formPanel, BorderLayout.CENTER);
-        panel.add(submit, BorderLayout.SOUTH);
+        JPanel submitPanel = new JPanel();
+        submitPanel.add(submit);
+        panel.add(submitPanel, BorderLayout.SOUTH);
     }
 
     public void setValuess(WaterCoolerEntity waterCooler){

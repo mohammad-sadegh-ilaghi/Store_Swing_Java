@@ -1,6 +1,7 @@
 package org.example.Views.WaterCoolViews;
 
 import org.example.Models.Entities.AirConditionerEntity;
+import org.example.Models.Entities.FieldsEntity;
 import org.example.Models.Entities.WaterCoolerEntity;
 
 import javax.swing.table.AbstractTableModel;
@@ -12,7 +13,7 @@ public class WaterCoolerTableModel extends AbstractTableModel {
     ArrayList<WaterCoolerEntity> waterCooler;
     private String[] columnNames;
     public WaterCoolerTableModel(ArrayList<WaterCoolerEntity> waterCooler){
-        Field[] fields = getAllFields(WaterCoolerEntity.class);
+        Field[] fields = FieldsEntity.getAllFields(WaterCoolerEntity.class);
         // convert the fields to an array of field names
         columnNames = Arrays.stream(fields)
                 .map(Field::getName)
@@ -87,15 +88,6 @@ public class WaterCoolerTableModel extends AbstractTableModel {
                 break;
         }
         return value;
-    }
-    public static Field[] getAllFields(Class<?> clazz) {
-        ArrayList<Field> fields = new ArrayList<Field>();
-        Class<?> currentClass = clazz;
-        while (currentClass != null) {
-            fields.addAll(Arrays.asList(currentClass.getDeclaredFields()));
-            currentClass = currentClass.getSuperclass();
-        }
-        return fields.toArray(new Field[0]);
     }
     public String getColumnName(int columnIndex) {
         return columnNames[columnIndex];

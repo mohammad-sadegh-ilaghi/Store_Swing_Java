@@ -1,7 +1,9 @@
 package org.example.Models.Entities;
 
 import java.io.Serializable;
+import java.lang.reflect.Field;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Date;
 
 public class FanEntity extends CoolSystemEntity implements Serializable {
@@ -21,7 +23,15 @@ public class FanEntity extends CoolSystemEntity implements Serializable {
         this.windVolume = windVolume;
         this.lengthOfCable = lengthOfCable;
     }
-
+    public FanEntity(CoolSystemEntity coolSystem ,int length, String type, boolean haveremoteController, String dimension, String windVolume, int lengthOfCable) {
+        super(coolSystem);
+        this.length = length;
+        this.type = type;
+        this.haveremoteController = haveremoteController;
+        this.dimension = dimension;
+        this.windVolume = windVolume;
+        this.lengthOfCable = lengthOfCable;
+    }
     public int getLength() {
         return length;
     }
@@ -80,6 +90,22 @@ public class FanEntity extends CoolSystemEntity implements Serializable {
                 ", windVolume='" + windVolume + '\'' +
                 ", lengthOfCable='" + lengthOfCable + '\'' +
                 '}';
+    }
+
+    public String toStringFile() {
+        return  super.toStringFile() + '\t' + length + '\t' +
+               type + '\t' +
+               haveremoteController + '\t' +
+               dimension + '\t' +
+               windVolume + '\t' +
+               lengthOfCable + '\t';
+    }
+    public static String[] getFeilds() {
+        Field[] fields = FieldsEntity.getAllFields(FanEntity.class);
+        return Arrays.stream(fields)
+                .map(Field::getName)
+                .map(item -> item.replaceAll("(\\p{Lower})(\\p{Upper})", "$1 $2"))
+                .toArray(String[]::new);
     }
 
 }

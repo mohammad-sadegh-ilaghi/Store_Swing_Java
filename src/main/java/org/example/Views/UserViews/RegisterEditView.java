@@ -105,9 +105,11 @@ public class RegisterEditView {
         formPanel.add(rulesLabel);
         formPanel.add(rules);
 
+        JPanel registerButtonPanel = new JPanel();
+        registerButtonPanel.add(registerButton);
 
         panel.add(formPanel, BorderLayout.CENTER);
-        panel.add(registerButton, BorderLayout.SOUTH);
+        panel.add(registerButtonPanel, BorderLayout.SOUTH);
     }
     public RegisterEditView(UserEntity user){
         this();

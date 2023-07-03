@@ -22,6 +22,10 @@ public class LoginView {
         passwordLabel = new JLabel("Password");
         usernameLabel = new JLabel("User name");
         loginButton = new JButton("login");
+        JPanel panelLoginButton = new JPanel();
+        panelLoginButton.add(loginButton);
+
+
         loginButton.setPreferredSize(new Dimension(70, 50));
         loginButton.setMaximumSize(new Dimension(100, 70));
 
@@ -47,7 +51,9 @@ public class LoginView {
             loginPanel.add(validateUsername);
             loginPanel.add(passwordPanel);
             loginPanel.add(validatePassword );
-            loginPanel.add(loginButton);
+
+
+            loginPanel.add(panelLoginButton);
 
         panel.add(loginPanel, BorderLayout.CENTER);
 

@@ -32,13 +32,23 @@ public class ExportFileAirCondition {
     }
     public static void export(){
         String path = FileManagement.getPath();
-
+        if (path.equals(""))
+            return;
         exportWithoutFileChooser(path);
     }
     private static void write(ArrayList<AirConditionerEntity> airConditionerEntities,String filePath){
         try (PrintWriter writer = new PrintWriter(filePath)) {
+            for (String item: AirConditionerEntity.getFeilds()){
+                if (item.equals("id"))
+                    writer.print(item + "\t\t\t");
+                writer.print(item + "\t");
+            }
+            writer.println();
+
+            writer.println("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
             for (AirConditionerEntity air: airConditionerEntities) {
-                writer.println(air);
+                writer.println(air.toStringFile());
             }
         } catch (IOException e) {
         }

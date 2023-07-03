@@ -11,6 +11,7 @@ import org.example.Models.Entities.AirConditionerEntity;
 import org.example.Models.Entities.FanEntity;
 import org.example.Models.Entities.ProductBought;
 import org.example.Models.Entities.UserEntity;
+import org.example.Views.Components.GetNumberComponent;
 import org.example.Views.CoreMiddleWare;
 import org.example.Views.FanViews.ListFanView;
 
@@ -18,6 +19,7 @@ import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.math.BigInteger;
+import java.util.ArrayList;
 
 public class ListFanController implements CoreController {
     private FanEntitiyBehavior model;
@@ -32,17 +34,43 @@ public class ListFanController implements CoreController {
         ActionListener actionListener = e-> buy();
         view.setBuyActionListerner(actionListener);
 
+        ActionListener search = e-> search();
+        view.searchComponent.addActionListerSearch(search);
+
+    }
+    public ListFanController(ArrayList<FanEntity> fanEntities) throws IOException {
+        this();
+        view = new ListFanView(fanEntities);
+        view.repaint();
+    }
+    public void search(){
+        String text = view.searchComponent.getSearch().getText();
+        ArrayList<FanEntity> fanEntities = model.getFans(text);
+        try {
+            CoreMiddleWare.singelton().setPanel(new ListFanController(fanEntities).view.getPanel());
+            CoreMiddleWare.singelton().repainAndReValidatePanel();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
     public void buy(){
         UserEntity user = UserConfigure.singlton().getUser();
         BigInteger id = getElement();
         FanEntity airConditioner = model.getFan(id);
+        int number = 0;
         if (airConditioner.getNumbers()> 0){
             try {
                 ProductBought productBought = new ProductBought(user, airConditioner);
                 ProductBoughtBehavior productBoughtBehavior = ProductBoughtBehavior.singleton();
-                if (productBoughtBehavior.buy(productBought))
-                    model.buy(airConditioner);
+                if (productBoughtBehavior.buy(productBought)){
+                    number = GetNumberComponent.getNumbers();
+                    if (number == 0)
+                        return;
+                    if (model.buy(airConditioner, number))
+                        repaint();
+                    else
+                        JOptionPane.showMessageDialog(null, "Product number is zero");
+                }
                 else
                     JOptionPane.showMessageDialog(null, "can not buy this product has some problem!!!");
                 repaint();
@@ -50,7 +78,7 @@ public class ListFanController implements CoreController {
                 throw new RuntimeException(e);
             }
         }else
-            JOptionPane.showMessageDialog(null, "Product number is zero");
+            JOptionPane.showMessageDialog(null, "this number of Product is not exist");
     }
     private void repaint(){
         try {
